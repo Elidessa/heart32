@@ -9,6 +9,7 @@
 #include "hal/lcd_types.h"
 #include "soc/gpio_num.h"
 #include "lcd.h"
+#include "types.h"
 
 #define I2C_MASTER_SCL_IO 32
 #define I2C_MASTER_SDA_IO 33
@@ -69,6 +70,7 @@ esp_lcd_panel_handle_t lcd_panel_setup(){
 		esp_lcd_panel_reset(panel_handle);
 		esp_lcd_panel_init(panel_handle);
 
+		esp_lcd_panel_disp_on_off(panel_handle, true);
 		return panel_handle;
 
 }
@@ -85,3 +87,15 @@ void draw_square(int x,int y, int size, uint8_t *canvas){
 				}
 		}
 }
+void draw_figure_on_canvas(uint8_t* canvas, character* fig){
+		int fig_x = fig->x;
+		int fig_y = fig->y;
+
+		int y = 0;
+		for(int i = 0; i < fig_x*fig_y; i++){
+				if(fig->elements[i])set_pixel(i%fig_x,y,canvas);
+				if(i%fig_x == fig_x-1)y++;
+		}
+}
+
+
