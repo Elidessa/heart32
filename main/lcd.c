@@ -1,35 +1,21 @@
-#include <math.h>
 #include <stdint.h>
-#include <stdio.h>
-#include <string.h>
 #include "driver/i2c_master.h"
 #include "esp_err.h"
 #include "esp_lcd_io_i2c.h"
 #include "esp_lcd_panel_dev.h"
 #include "esp_lcd_types.h"
-#include "esp_task_wdt.h"
-#include "freertos/idf_additions.h"
-#include "freertos/projdefs.h"
 #include "esp_lcd_panel_ssd1306.h"
-#include "esp_lcd_panel_io.h"
 #include "esp_lcd_panel_ops.h"
 #include "hal/lcd_types.h"
 #include "soc/gpio_num.h"
+#include "lcd.h"
 
 #define I2C_MASTER_SCL_IO 32
 #define I2C_MASTER_SDA_IO 33
 #define TEST_I2C_PORT -1
 #define LCD_ADDR 0x3C
-void draw_square(int x,int y, int size, uint8_t *canvas);
-void set_pixel(int x, int y, uint8_t* canvas);
 
-void app_main(void){
-		const uint8_t bmp[] = {
-				0xf0,0x29,0x29,0xf0};
-
-		uint8_t *canvas = malloc(128*32/8);
-		memset(canvas, 0, 512);
-
+esp_lcd_panel_handle_t lcd_panel_setup(){
 		i2c_master_bus_config_t i2c_mst_config = {
 				.clk_source = I2C_CLK_SRC_DEFAULT,
 				.i2c_port = TEST_I2C_PORT,
@@ -62,7 +48,7 @@ void app_main(void){
 		};
 
 		ESP_ERROR_CHECK(esp_lcd_new_panel_io_i2c(bus_handle, &io_config, &io_handle));
-		
+
 		esp_lcd_panel_ssd1306_config_t ssd1306_c = {
 				.height = 32,
 		};
@@ -79,53 +65,11 @@ void app_main(void){
 				}
 		};
 		ESP_ERROR_CHECK(esp_lcd_new_panel_ssd1306(io_handle,&panel_config,&panel_handle));
+
 		esp_lcd_panel_reset(panel_handle);
 		esp_lcd_panel_init(panel_handle);
-		
-		esp_lcd_panel_disp_on_off(panel_handle, true);
-		
-		//set_pixel(100,0, canvas);
-		//set_pixel(101,0, canvas);
 
-
-/*
-		int x = 0; 
-		int y = 0;
-		int xspeed = 5;
-		int yspeed = 5;
-		while(true){
-				draw_square(x, y, 2, canvas);
-
-				if(x+xspeed >= 128 || x+xspeed <= 0){
-						xspeed *= -1;
-				}
-				if(y+yspeed >= 32|| y+yspeed <= 0){
-						yspeed *= -1;
-				}
-
-				x+= xspeed;
-				y+= yspeed;
-
-				esp_lcd_panel_draw_bitmap(panel_handle, 0, 0, 128, 32, canvas);
-				memset(canvas, 0, 512);
-		}
-		*/
-
-
-
-
-		esp_lcd_panel_draw_bitmap(panel_handle, 0, 0,
-										128, 32 , canvas);
-		esp_lcd_panel_draw_bitmap(panel_handle, 0, 0, 4, 8, bmp);
-
-		/*
-		while(9){
-				esp_lcd_panel_disp_on_off( panel_handle, true);
-				vTaskDelay(pdMS_TO_TICKS(1000));
-				esp_lcd_panel_disp_on_off( panel_handle, false);
-				vTaskDelay(pdMS_TO_TICKS(1000));
-		}
-		*/
+		return panel_handle;
 
 }
 void set_pixel(int x, int y, uint8_t* canvas){
