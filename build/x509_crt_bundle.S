@@ -1,4 +1,4 @@
-/* * Data converted from /home/elibra/skola/signal/projekt/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /home/minipops/uni/da383a/heart32/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 #if !defined (__APPLE__) && !defined (__linux__)

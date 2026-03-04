@@ -6,22 +6,22 @@ cmake_minimum_required(VERSION ${CMAKE_VERSION}) # this file comes with cmake
 # If CMAKE_DISABLE_SOURCE_CHANGES is set to true and the source directory is an
 # existing directory in our source tree, calling file(MAKE_DIRECTORY) on it
 # would cause a fatal error, even though it would be a no-op.
-if(NOT EXISTS "/home/elibra/esp/esp-idf/components/bootloader/subproject")
-  file(MAKE_DIRECTORY "/home/elibra/esp/esp-idf/components/bootloader/subproject")
+if(NOT EXISTS "/opt/esp-idf/components/bootloader/subproject")
+  file(MAKE_DIRECTORY "/opt/esp-idf/components/bootloader/subproject")
 endif()
 file(MAKE_DIRECTORY
-  "/home/elibra/skola/signal/projekt/build/bootloader"
-  "/home/elibra/skola/signal/projekt/build/bootloader-prefix"
-  "/home/elibra/skola/signal/projekt/build/bootloader-prefix/tmp"
-  "/home/elibra/skola/signal/projekt/build/bootloader-prefix/src/bootloader-stamp"
-  "/home/elibra/skola/signal/projekt/build/bootloader-prefix/src"
-  "/home/elibra/skola/signal/projekt/build/bootloader-prefix/src/bootloader-stamp"
+  "/home/minipops/uni/da383a/heart32/build/bootloader"
+  "/home/minipops/uni/da383a/heart32/build/bootloader-prefix"
+  "/home/minipops/uni/da383a/heart32/build/bootloader-prefix/tmp"
+  "/home/minipops/uni/da383a/heart32/build/bootloader-prefix/src/bootloader-stamp"
+  "/home/minipops/uni/da383a/heart32/build/bootloader-prefix/src"
+  "/home/minipops/uni/da383a/heart32/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/home/elibra/skola/signal/projekt/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/home/minipops/uni/da383a/heart32/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/home/elibra/skola/signal/projekt/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/home/minipops/uni/da383a/heart32/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()
