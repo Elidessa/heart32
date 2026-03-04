@@ -1,0 +1,2 @@
+source /home/elibra/skola/signal/projekt/build/bootloader/gdbinit/symbols
+source /home/elibra/skola/signal/projekt/build/bootloader/gdbinit/connect

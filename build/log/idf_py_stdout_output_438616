@@ -1,0 +1,2462 @@
+Command: /home/elibra/.espressif/python_env/idf5.5_py3.14_env/bin/python /home/elibra/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/elibra/skola/signal/projekt/build/projekt.elf /home/elibra/skola/signal/projekt/build/bootloader/bootloader.elf -m '/home/elibra/.espressif/python_env/idf5.5_py3.14_env/bin/python' '/home/elibra/esp/esp-idf/tools/idf.py'
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6384
+load:0x40078000,len:15916
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v5.5.2 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  4 2026 09:03:34[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v1.0[0m
+[0;32mI (31) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (78) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bb24h ( 47908) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=0001bb4c vaddr=3ffb0000 size=02400h (  9216) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001df54 vaddr=40080000 size=020c4h (  8388) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=13ab0h ( 80560) map[0m
+[0;32mI (141) esp_image: segment 4: paddr=00033ad8 vaddr=400820c4 size=0b4a0h ( 46240) load[0m
+[0;32mI (159) esp_image: segment 5: paddr=0003ef80 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (166) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (166) boot: Disabling RNG early entropy source...[0m
+[0;32mI (178) cpu_start: Multicore app[0m
+[0;32mI (186) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (186) cpu_start: Pro cpu start user code[0m
+[0;32mI (186) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (188) app_init: Application information:[0m
+[0;32mI (192) app_init: Project name:     projekt[0m
+[0;32mI (196) app_init: App version:      1[0m
+[0;32mI (199) app_init: Compile time:     Mar  4 2026 09:03:03[0m
+[0;32mI (204) app_init: ELF file SHA256:  4f3da6eec...[0m
+[0;32mI (208) app_init: ESP-IDF:          v5.5.2[0m
+[0;32mI (212) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (216) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (220) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (224) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (230) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (235) heap_init: At 3FFB2CE0 len 0002D320 (180 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (246) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 4008D564 len 00012A9C (74 KiB): IRAM[0m
+[0;33mW (258) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (270) spi_flash: detected chip: generic[0m
+[0;32mI (273) spi_flash: flash io: dio[0m
+[0;33mW (276) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (289) main_task: Started on CPU0[0m
+[0;32mI (299) main_task: Calling app_main()[0m
+index: 0
+, y: 0
+index: 0
+, y: 1
+index: 0
+, y: 2
+index: 0
+, y: 3
+index: 0
+, y: 4
+index: 0
+, y: 5
+index: 0
+, y: 6
+index: 0
+, y: 7
+index: 128
+, y: 8
+index: 128
+, y: 9
+index: 1
+, y: 0
+index: 1
+, y: 1
+index: 1
+, y: 2
+index: 1
+, y: 3
+index: 1
+, y: 4
+index: 1
+, y: 5
+index: 1
+, y: 6
+index: 1
+, y: 7
+index: 129
+, y: 8
+index: 129
+, y: 9
+index: 2
+, y: 0
+index: 2
+, y: 1
+index: 2
+, y: 2
+index: 2
+, y: 3
+index: 2
+, y: 4
+index: 2
+, y: 5
+index: 2
+, y: 6
+index: 2
+, y: 7
+index: 130
+, y: 8
+index: 130
+, y: 9
+index: 3
+, y: 0
+index: 3
+, y: 1
+index: 3
+, y: 2
+index: 3
+, y: 3
+index: 3
+, y: 4
+index: 3
+, y: 5
+index: 3
+, y: 6
+index: 3
+, y: 7
+index: 131
+, y: 8
+index: 131
+, y: 9
+index: 4
+, y: 0
+index: 4
+, y: 1
+index: 4
+, y: 2
+index: 4
+, y: 3
+index: 4
+, y: 4
+index: 4
+, y: 5
+index: 4
+, y: 6
+index: 4
+, y: 7
+index: 132
+, y: 8
+index: 132
+, y: 9
+index: 5
+, y: 0
+index: 5
+, y: 1
+index: 5
+, y: 2
+index: 5
+, y: 3
+index: 5
+, y: 4
+index: 5
+, y: 5
+index: 5
+, y: 6
+index: 5
+, y: 7
+index: 133
+, y: 8
+index: 133
+, y: 9
+index: 6
+, y: 0
+index: 6
+, y: 1
+index: 6
+, y: 2
+index: 6
+, y: 3
+index: 6
+, y: 4
+index: 6
+, y: 5
+index: 6
+, y: 6
+index: 6
+, y: 7
+index: 134
+, y: 8
+index: 134
+, y: 9
+index: 7
+, y: 0
+index: 7
+, y: 1
+index: 7
+, y: 2
+index: 7
+, y: 3
+index: 7
+, y: 4
+index: 7
+, y: 5
+index: 7
+, y: 6
+index: 7
+, y: 7
+index: 135
+, y: 8
+index: 135
+, y: 9
+index: 8
+, y: 0
+index: 8
+, y: 1
+index: 8
+, y: 2
+index: 8
+, y: 3
+index: 8
+, y: 4
+index: 8
+, y: 5
+index: 8
+, y: 6
+index: 8
+, y: 7
+index: 136
+, y: 8
+index: 136
+, y: 9
+index: 9
+, y: 0
+index: 9
+, y: 1
+index: 9
+, y: 2
+index: 9
+, y: 3
+index: 9
+, y: 4
+index: 9
+, y: 5
+index: 9
+, y: 6
+index: 9
+, y: 7
+index: 137
+, y: 8
+index: 137
+, y: 9
+index: 228
+, y: 10
+index: 228
+, y: 11
+index: 228
+, y: 12
+index: 228
+, y: 13
+index: 228
+, y: 14
+index: 228
+, y: 15
+index: 356
+, y: 16
+index: 356
+, y: 17
+index: 356
+, y: 18
+index: 356
+, y: 19
+index: 229
+, y: 10
+index: 229
+, y: 11
+index: 229
+, y: 12
+index: 229
+, y: 13
+index: 229
+, y: 14
+index: 229
+, y: 15
+index: 357
+, y: 16
+index: 357
+, y: 17
+index: 357
+, y: 18
+index: 357
+, y: 19
+index: 230
+, y: 10
+index: 230
+, y: 11
+index: 230
+, y: 12
+index: 230
+, y: 13
+index: 230
+, y: 14
+index: 230
+, y: 15
+index: 358
+, y: 16
+index: 358
+, y: 17
+index: 358
+, y: 18
+index: 358
+, y: 19
+index: 231
+, y: 10
+index: 231
+, y: 11
+index: 231
+, y: 12
+index: 231
+, y: 13
+index: 231
+, y: 14
+index: 231
+, y: 15
+index: 359
+, y: 16
+index: 359
+, y: 17
+index: 359
+, y: 18
+index: 359
+, y: 19
+index: 232
+, y: 10
+index: 232
+, y: 11
+index: 232
+, y: 12
+index: 232
+, y: 13
+index: 232
+, y: 14
+index: 232
+, y: 15
+index: 360
+, y: 16
+index: 360
+, y: 17
+index: 360
+, y: 18
+index: 360
+, y: 19
+index: 233
+, y: 10
+index: 233
+, y: 11
+index: 233
+, y: 12
+index: 233
+, y: 13
+index: 233
+, y: 14
+index: 233
+, y: 15
+index: 361
+, y: 16
+index: 361
+, y: 17
+index: 361
+, y: 18
+index: 361
+, y: 19
+index: 234
+, y: 10
+index: 234
+, y: 11
+index: 234
+, y: 12
+index: 234
+, y: 13
+index: 234
+, y: 14
+index: 234
+, y: 15
+index: 362
+, y: 16
+index: 362
+, y: 17
+index: 362
+, y: 18
+index: 362
+, y: 19
+index: 235
+, y: 10
+index: 235
+, y: 11
+index: 235
+, y: 12
+index: 235
+, y: 13
+index: 235
+, y: 14
+index: 235
+, y: 15
+index: 363
+, y: 16
+index: 363
+, y: 17
+index: 363
+, y: 18
+index: 363
+, y: 19
+index: 236
+, y: 10
+index: 236
+, y: 11
+index: 236
+, y: 12
+index: 236
+, y: 13
+index: 236
+, y: 14
+index: 236
+, y: 15
+index: 364
+, y: 16
+index: 364
+, y: 17
+index: 364
+, y: 18
+index: 364
+, y: 19
+index: 237
+, y: 10
+index: 237
+, y: 11
+index: 237
+, y: 12
+index: 237
+, y: 13
+index: 237
+, y: 14
+index: 237
+, y: 15
+index: 365
+, y: 16
+index: 365
+, y: 17
+index: 365
+, y: 18
+index: 365
+, y: 19
+index: 306
+, y: 20
+index: 306
+, y: 21
+index: 306
+, y: 22
+index: 306
+, y: 23
+index: 434
+, y: 24
+index: 434
+, y: 25
+index: 434
+, y: 26
+index: 434
+, y: 27
+index: 434
+, y: 28
+index: 434
+, y: 29
+index: 307
+, y: 20
+index: 307
+, y: 21
+index: 307
+, y: 22
+index: 307
+, y: 23
+index: 435
+, y: 24
+index: 435
+, y: 25
+index: 435
+, y: 26
+index: 435
+, y: 27
+index: 435
+, y: 28
+index: 435
+, y: 29
+index: 308
+, y: 20
+index: 308
+, y: 21
+index: 308
+, y: 22
+index: 308
+, y: 23
+index: 436
+, y: 24
+index: 436
+, y: 25
+index: 436
+, y: 26
+index: 436
+, y: 27
+index: 436
+, y: 28
+index: 436
+, y: 29
+index: 309
+, y: 20
+index: 309
+, y: 21
+index: 309
+, y: 22
+index: 309
+, y: 23
+index: 437
+, y: 24
+index: 437
+, y: 25
+index: 437
+, y: 26
+index: 437
+, y: 27
+index: 437
+, y: 28
+index: 437
+, y: 29
+index: 310
+, y: 20
+index: 310
+, y: 21
+index: 310
+, y: 22
+index: 310
+, y: 23
+index: 438
+, y: 24
+index: 438
+, y: 25
+index: 438
+, y: 26
+index: 438
+, y: 27
+index: 438
+, y: 28
+index: 438
+, y: 29
+index: 311
+, y: 20
+index: 311
+, y: 21
+index: 311
+, y: 22
+index: 311
+, y: 23
+index: 439
+, y: 24
+index: 439
+, y: 25
+index: 439
+, y: 26
+index: 439
+, y: 27
+index: 439
+, y: 28
+index: 439
+, y: 29
+index: 312
+, y: 20
+index: 312
+, y: 21
+index: 312
+, y: 22
+index: 312
+, y: 23
+index: 440
+, y: 24
+index: 440
+, y: 25
+index: 440
+, y: 26
+index: 440
+, y: 27
+index: 440
+, y: 28
+index: 440
+, y: 29
+index: 313
+, y: 20
+index: 313
+, y: 21
+index: 313
+, y: 22
+index: 313
+, y: 23
+index: 441
+, y: 24
+index: 441
+, y: 25
+index: 441
+, y: 26
+index: 441
+, y: 27
+index: 441
+, y: 28
+index: 441
+, y: 29
+index: 314
+, y: 20
+index: 314
+, y: 21
+index: 314
+, y: 22
+index: 314
+, y: 23
+index: 442
+, y: 24
+index: 442
+, y: 25
+index: 442
+, y: 26
+index: 442
+, y: 27
+index: 442
+, y: 28
+index: 442
+, y: 29
+index: 315
+, y: 20
+index: 315
+, y: 21
+index: 315
+, y: 22
+index: 315
+, y: 23
+index: 443
+, y: 24
+index: 443
+, y: 25
+index: 443
+, y: 26
+index: 443
+, y: 27
+index: 443
+, y: 28
+index: 443
+, y: 29
+index: 20
+, y: 2
+index: 20
+, y: 3
+index: 20
+, y: 4
+index: 20
+, y: 5
+index: 20
+, y: 6
+index: 20
+, y: 7
+index: 148
+, y: 8
+index: 148
+, y: 9
+index: 148
+, y: 10
+index: 148
+, y: 11
+index: 148
+, y: 12
+index: 148
+, y: 13
+index: 148
+, y: 14
+index: 148
+, y: 15
+index: 276
+, y: 16
+index: 276
+, y: 17
+index: 276
+, y: 18
+index: 276
+, y: 19
+index: 276
+, y: 20
+index: 276
+, y: 21
+index: 276
+, y: 22
+index: 276
+, y: 23
+index: 404
+, y: 24
+index: 404
+, y: 25
+index: 404
+, y: 26
+index: 404
+, y: 27
+index: 404
+, y: 28
+index: 404
+, y: 29
+index: 404
+, y: 30
+index: 404
+, y: 31
+index: 21
+, y: 2
+index: 21
+, y: 3
+index: 21
+, y: 4
+index: 21
+, y: 5
+index: 21
+, y: 6
+index: 21
+, y: 7
+index: 149
+, y: 8
+index: 149
+, y: 9
+index: 149
+, y: 10
+index: 149
+, y: 11
+index: 149
+, y: 12
+index: 149
+, y: 13
+index: 149
+, y: 14
+index: 149
+, y: 15
+index: 277
+, y: 16
+index: 277
+, y: 17
+index: 277
+, y: 18
+index: 277
+, y: 19
+index: 277
+, y: 20
+index: 277
+, y: 21
+index: 277
+, y: 22
+index: 277
+, y: 23
+index: 405
+, y: 24
+index: 405
+, y: 25
+index: 405
+, y: 26
+index: 405
+, y: 27
+index: 405
+, y: 28
+index: 405
+, y: 29
+index: 405
+, y: 30
+index: 405
+, y: 31
+index: 22
+, y: 2
+index: 22
+, y: 3
+index: 22
+, y: 4
+index: 22
+, y: 5
+index: 22
+, y: 6
+index: 22
+, y: 7
+index: 150
+, y: 8
+index: 150
+, y: 9
+index: 150
+, y: 10
+index: 150
+, y: 11
+index: 150
+, y: 12
+index: 150
+, y: 13
+index: 150
+, y: 14
+index: 150
+, y: 15
+index: 278
+, y: 16
+index: 278
+, y: 17
+index: 278
+, y: 18
+index: 278
+, y: 19
+index: 278
+, y: 20
+index: 278
+, y: 21
+index: 278
+, y: 22
+index: 278
+, y: 23
+index: 406
+, y: 24
+index: 406
+, y: 25
+index: 406
+, y: 26
+index: 406
+, y: 27
+index: 406
+, y: 28
+index: 406
+, y: 29
+index: 406
+, y: 30
+index: 406
+, y: 31
+index: 23
+, y: 2
+index: 23
+, y: 3
+index: 23
+, y: 4
+index: 23
+, y: 5
+index: 23
+, y: 6
+index: 23
+, y: 7
+index: 151
+, y: 8
+index: 151
+, y: 9
+index: 151
+, y: 10
+index: 151
+, y: 11
+index: 151
+, y: 12
+index: 151
+, y: 13
+index: 151
+, y: 14
+index: 151
+, y: 15
+index: 279
+, y: 16
+index: 279
+, y: 17
+index: 279
+, y: 18
+index: 279
+, y: 19
+index: 279
+, y: 20
+index: 279
+, y: 21
+index: 279
+, y: 22
+index: 279
+, y: 23
+index: 407
+, y: 24
+index: 407
+, y: 25
+index: 407
+, y: 26
+index: 407
+, y: 27
+index: 407
+, y: 28
+index: 407
+, y: 29
+index: 407
+, y: 30
+index: 407
+, y: 31
+index: 24
+, y: 2
+index: 24
+, y: 3
+index: 24
+, y: 4
+index: 24
+, y: 5
+index: 24
+, y: 6
+index: 24
+, y: 7
+index: 152
+, y: 8
+index: 152
+, y: 9
+index: 152
+, y: 10
+index: 152
+, y: 11
+index: 152
+, y: 12
+index: 152
+, y: 13
+index: 152
+, y: 14
+index: 152
+, y: 15
+index: 280
+, y: 16
+index: 280
+, y: 17
+index: 280
+, y: 18
+index: 280
+, y: 19
+index: 280
+, y: 20
+index: 280
+, y: 21
+index: 280
+, y: 22
+index: 280
+, y: 23
+index: 408
+, y: 24
+index: 408
+, y: 25
+index: 408
+, y: 26
+index: 408
+, y: 27
+index: 408
+, y: 28
+index: 408
+, y: 29
+index: 408
+, y: 30
+index: 408
+, y: 31
+index: 25
+, y: 2
+index: 25
+, y: 3
+index: 25
+, y: 4
+index: 25
+, y: 5
+index: 25
+, y: 6
+index: 25
+, y: 7
+index: 153
+, y: 8
+index: 153
+, y: 9
+index: 153
+, y: 10
+index: 153
+, y: 11
+index: 153
+, y: 12
+index: 153
+, y: 13
+index: 153
+, y: 14
+index: 153
+, y: 15
+index: 281
+, y: 16
+index: 281
+, y: 17
+index: 281
+, y: 18
+index: 281
+, y: 19
+index: 281
+, y: 20
+index: 281
+, y: 21
+index: 281
+, y: 22
+index: 281
+, y: 23
+index: 409
+, y: 24
+index: 409
+, y: 25
+index: 409
+, y: 26
+index: 409
+, y: 27
+index: 409
+, y: 28
+index: 409
+, y: 29
+index: 409
+, y: 30
+index: 409
+, y: 31
+index: 26
+, y: 2
+index: 26
+, y: 3
+index: 26
+, y: 4
+index: 26
+, y: 5
+index: 26
+, y: 6
+index: 26
+, y: 7
+index: 154
+, y: 8
+index: 154
+, y: 9
+index: 154
+, y: 10
+index: 154
+, y: 11
+index: 154
+, y: 12
+index: 154
+, y: 13
+index: 154
+, y: 14
+index: 154
+, y: 15
+index: 282
+, y: 16
+index: 282
+, y: 17
+index: 282
+, y: 18
+index: 282
+, y: 19
+index: 282
+, y: 20
+index: 282
+, y: 21
+index: 282
+, y: 22
+index: 282
+, y: 23
+index: 410
+, y: 24
+index: 410
+, y: 25
+index: 410
+, y: 26
+index: 410
+, y: 27
+index: 410
+, y: 28
+index: 410
+, y: 29
+index: 410
+, y: 30
+index: 410
+, y: 31
+index: 27
+, y: 2
+index: 27
+, y: 3
+index: 27
+, y: 4
+index: 27
+, y: 5
+index: 27
+, y: 6
+index: 27
+, y: 7
+index: 155
+, y: 8
+index: 155
+, y: 9
+index: 155
+, y: 10
+index: 155
+, y: 11
+index: 155
+, y: 12
+index: 155
+, y: 13
+index: 155
+, y: 14
+index: 155
+, y: 15
+index: 283
+, y: 16
+index: 283
+, y: 17
+index: 283
+, y: 18
+index: 283
+, y: 19
+index: 283
+, y: 20
+index: 283
+, y: 21
+index: 283
+, y: 22
+index: 283
+, y: 23
+index: 411
+, y: 24
+index: 411
+, y: 25
+index: 411
+, y: 26
+index: 411
+, y: 27
+index: 411
+, y: 28
+index: 411
+, y: 29
+index: 411
+, y: 30
+index: 411
+, y: 31
+index: 28
+, y: 2
+index: 28
+, y: 3
+index: 28
+, y: 4
+index: 28
+, y: 5
+index: 28
+, y: 6
+index: 28
+, y: 7
+index: 156
+, y: 8
+index: 156
+, y: 9
+index: 156
+, y: 10
+index: 156
+, y: 11
+index: 156
+, y: 12
+index: 156
+, y: 13
+index: 156
+, y: 14
+index: 156
+, y: 15
+index: 284
+, y: 16
+index: 284
+, y: 17
+index: 284
+, y: 18
+index: 284
+, y: 19
+index: 284
+, y: 20
+index: 284
+, y: 21
+index: 284
+, y: 22
+index: 284
+, y: 23
+index: 412
+, y: 24
+index: 412
+, y: 25
+index: 412
+, y: 26
+index: 412
+, y: 27
+index: 412
+, y: 28
+index: 412
+, y: 29
+index: 412
+, y: 30
+index: 412
+, y: 31
+index: 29
+, y: 2
+index: 29
+, y: 3
+index: 29
+, y: 4
+index: 29
+, y: 5
+index: 29
+, y: 6
+index: 29
+, y: 7
+index: 157
+, y: 8
+index: 157
+, y: 9
+index: 157
+, y: 10
+index: 157
+, y: 11
+index: 157
+, y: 12
+index: 157
+, y: 13
+index: 157
+, y: 14
+index: 157
+, y: 15
+index: 285
+, y: 16
+index: 285
+, y: 17
+index: 285
+, y: 18
+index: 285
+, y: 19
+index: 285
+, y: 20
+index: 285
+, y: 21
+index: 285
+, y: 22
+index: 285
+, y: 23
+index: 413
+, y: 24
+index: 413
+, y: 25
+index: 413
+, y: 26
+index: 413
+, y: 27
+index: 413
+, y: 28
+index: 413
+, y: 29
+index: 413
+, y: 30
+index: 413
+, y: 31
+index: 30
+, y: 2
+index: 30
+, y: 3
+index: 30
+, y: 4
+index: 30
+, y: 5
+index: 30
+, y: 6
+index: 30
+, y: 7
+index: 158
+, y: 8
+index: 158
+, y: 9
+index: 158
+, y: 10
+index: 158
+, y: 11
+index: 158
+, y: 12
+index: 158
+, y: 13
+index: 158
+, y: 14
+index: 158
+, y: 15
+index: 286
+, y: 16
+index: 286
+, y: 17
+index: 286
+, y: 18
+index: 286
+, y: 19
+index: 286
+, y: 20
+index: 286
+, y: 21
+index: 286
+, y: 22
+index: 286
+, y: 23
+index: 414
+, y: 24
+index: 414
+, y: 25
+index: 414
+, y: 26
+index: 414
+, y: 27
+index: 414
+, y: 28
+index: 414
+, y: 29
+index: 414
+, y: 30
+index: 414
+, y: 31
+index: 31
+, y: 2
+index: 31
+, y: 3
+index: 31
+, y: 4
+index: 31
+, y: 5
+index: 31
+, y: 6
+index: 31
+, y: 7
+index: 159
+, y: 8
+index: 159
+, y: 9
+index: 159
+, y: 10
+index: 159
+, y: 11
+index: 159
+, y: 12
+index: 159
+, y: 13
+index: 159
+, y: 14
+index: 159
+, y: 15
+index: 287
+, y: 16
+index: 287
+, y: 17
+index: 287
+, y: 18
+index: 287
+, y: 19
+index: 287
+, y: 20
+index: 287
+, y: 21
+index: 287
+, y: 22
+index: 287
+, y: 23
+index: 415
+, y: 24
+index: 415
+, y: 25
+index: 415
+, y: 26
+index: 415
+, y: 27
+index: 415
+, y: 28
+index: 415
+, y: 29
+index: 415
+, y: 30
+index: 415
+, y: 31
+index: 32
+, y: 2
+index: 32
+, y: 3
+index: 32
+, y: 4
+index: 32
+, y: 5
+index: 32
+, y: 6
+index: 32
+, y: 7
+index: 160
+, y: 8
+index: 160
+, y: 9
+index: 160
+, y: 10
+index: 160
+, y: 11
+index: 160
+, y: 12
+index: 160
+, y: 13
+index: 160
+, y: 14
+index: 160
+, y: 15
+index: 288
+, y: 16
+index: 288
+, y: 17
+index: 288
+, y: 18
+index: 288
+, y: 19
+index: 288
+, y: 20
+index: 288
+, y: 21
+index: 288
+, y: 22
+index: 288
+, y: 23
+index: 416
+, y: 24
+index: 416
+, y: 25
+index: 416
+, y: 26
+index: 416
+, y: 27
+index: 416
+, y: 28
+index: 416
+, y: 29
+index: 416
+, y: 30
+index: 416
+, y: 31
+index: 33
+, y: 2
+index: 33
+, y: 3
+index: 33
+, y: 4
+index: 33
+, y: 5
+index: 33
+, y: 6
+index: 33
+, y: 7
+index: 161
+, y: 8
+index: 161
+, y: 9
+index: 161
+, y: 10
+index: 161
+, y: 11
+index: 161
+, y: 12
+index: 161
+, y: 13
+index: 161
+, y: 14
+index: 161
+, y: 15
+index: 289
+, y: 16
+index: 289
+, y: 17
+index: 289
+, y: 18
+index: 289
+, y: 19
+index: 289
+, y: 20
+index: 289
+, y: 21
+index: 289
+, y: 22
+index: 289
+, y: 23
+index: 417
+, y: 24
+index: 417
+, y: 25
+index: 417
+, y: 26
+index: 417
+, y: 27
+index: 417
+, y: 28
+index: 417
+, y: 29
+index: 417
+, y: 30
+index: 417
+, y: 31
+index: 34
+, y: 2
+index: 34
+, y: 3
+index: 34
+, y: 4
+index: 34
+, y: 5
+index: 34
+, y: 6
+index: 34
+, y: 7
+index: 162
+, y: 8
+index: 162
+, y: 9
+index: 162
+, y: 10
+index: 162
+, y: 11
+index: 162
+, y: 12
+index: 162
+, y: 13
+index: 162
+, y: 14
+index: 162
+, y: 15
+index: 290
+, y: 16
+index: 290
+, y: 17
+index: 290
+, y: 18
+index: 290
+, y: 19
+index: 290
+, y: 20
+index: 290
+, y: 21
+index: 290
+, y: 22
+index: 290
+, y: 23
+index: 418
+, y: 24
+index: 418
+, y: 25
+index: 418
+, y: 26
+index: 418
+, y: 27
+index: 418
+, y: 28
+index: 418
+, y: 29
+index: 418
+, y: 30
+index: 418
+, y: 31
+index: 35
+, y: 2
+index: 35
+, y: 3
+index: 35
+, y: 4
+index: 35
+, y: 5
+index: 35
+, y: 6
+index: 35
+, y: 7
+index: 163
+, y: 8
+index: 163
+, y: 9
+index: 163
+, y: 10
+index: 163
+, y: 11
+index: 163
+, y: 12
+index: 163
+, y: 13
+index: 163
+, y: 14
+index: 163
+, y: 15
+index: 291
+, y: 16
+index: 291
+, y: 17
+index: 291
+, y: 18
+index: 291
+, y: 19
+index: 291
+, y: 20
+index: 291
+, y: 21
+index: 291
+, y: 22
+index: 291
+, y: 23
+index: 419
+, y: 24
+index: 419
+, y: 25
+index: 419
+, y: 26
+index: 419
+, y: 27
+index: 419
+, y: 28
+index: 419
+, y: 29
+index: 419
+, y: 30
+index: 419
+, y: 31
+index: 36
+, y: 2
+index: 36
+, y: 3
+index: 36
+, y: 4
+index: 36
+, y: 5
+index: 36
+, y: 6
+index: 36
+, y: 7
+index: 164
+, y: 8
+index: 164
+, y: 9
+index: 164
+, y: 10
+index: 164
+, y: 11
+index: 164
+, y: 12
+index: 164
+, y: 13
+index: 164
+, y: 14
+index: 164
+, y: 15
+index: 292
+, y: 16
+index: 292
+, y: 17
+index: 292
+, y: 18
+index: 292
+, y: 19
+index: 292
+, y: 20
+index: 292
+, y: 21
+index: 292
+, y: 22
+index: 292
+, y: 23
+index: 420
+, y: 24
+index: 420
+, y: 25
+index: 420
+, y: 26
+index: 420
+, y: 27
+index: 420
+, y: 28
+index: 420
+, y: 29
+index: 420
+, y: 30
+index: 420
+, y: 31
+index: 37
+, y: 2
+index: 37
+, y: 3
+index: 37
+, y: 4
+index: 37
+, y: 5
+index: 37
+, y: 6
+index: 37
+, y: 7
+index: 165
+, y: 8
+index: 165
+, y: 9
+index: 165
+, y: 10
+index: 165
+, y: 11
+index: 165
+, y: 12
+index: 165
+, y: 13
+index: 165
+, y: 14
+index: 165
+, y: 15
+index: 293
+, y: 16
+index: 293
+, y: 17
+index: 293
+, y: 18
+index: 293
+, y: 19
+index: 293
+, y: 20
+index: 293
+, y: 21
+index: 293
+, y: 22
+index: 293
+, y: 23
+index: 421
+, y: 24
+index: 421
+, y: 25
+index: 421
+, y: 26
+index: 421
+, y: 27
+index: 421
+, y: 28
+index: 421
+, y: 29
+index: 421
+, y: 30
+index: 421
+, y: 31
+index: 38
+, y: 2
+index: 38
+, y: 3
+index: 38
+, y: 4
+index: 38
+, y: 5
+index: 38
+, y: 6
+index: 38
+, y: 7
+index: 166
+, y: 8
+index: 166
+, y: 9
+index: 166
+, y: 10
+index: 166
+, y: 11
+index: 166
+, y: 12
+index: 166
+, y: 13
+index: 166
+, y: 14
+index: 166
+, y: 15
+index: 294
+, y: 16
+index: 294
+, y: 17
+index: 294
+, y: 18
+index: 294
+, y: 19
+index: 294
+, y: 20
+index: 294
+, y: 21
+index: 294
+, y: 22
+index: 294
+, y: 23
+index: 422
+, y: 24
+index: 422
+, y: 25
+index: 422
+, y: 26
+index: 422
+, y: 27
+index: 422
+, y: 28
+index: 422
+, y: 29
+index: 422
+, y: 30
+index: 422
+, y: 31
+index: 39
+, y: 2
+index: 39
+, y: 3
+index: 39
+, y: 4
+index: 39
+, y: 5
+index: 39
+, y: 6
+index: 39
+, y: 7
+index: 167
+, y: 8
+index: 167
+, y: 9
+index: 167
+, y: 10
+index: 167
+, y: 11
+index: 167
+, y: 12
+index: 167
+, y: 13
+index: 167
+, y: 14
+index: 167
+, y: 15
+index: 295
+, y: 16
+index: 295
+, y: 17
+index: 295
+, y: 18
+index: 295
+, y: 19
+index: 295
+, y: 20
+index: 295
+, y: 21
+index: 295
+, y: 22
+index: 295
+, y: 23
+index: 423
+, y: 24
+index: 423
+, y: 25
+index: 423
+, y: 26
+index: 423
+, y: 27
+index: 423
+, y: 28
+index: 423
+, y: 29
+index: 423
+, y: 30
+index: 423
+, y: 31
+index: 40
+, y: 2
+index: 40
+, y: 3
+index: 40
+, y: 4
+index: 40
+, y: 5
+index: 40
+, y: 6
+index: 40
+, y: 7
+index: 168
+, y: 8
+index: 168
+, y: 9
+index: 168
+, y: 10
+index: 168
+, y: 11
+index: 168
+, y: 12
+index: 168
+, y: 13
+index: 168
+, y: 14
+index: 168
+, y: 15
+index: 296
+, y: 16
+index: 296
+, y: 17
+index: 296
+, y: 18
+index: 296
+, y: 19
+index: 296
+, y: 20
+index: 296
+, y: 21
+index: 296
+, y: 22
+index: 296
+, y: 23
+index: 424
+, y: 24
+index: 424
+, y: 25
+index: 424
+, y: 26
+index: 424
+, y: 27
+index: 424
+, y: 28
+index: 424
+, y: 29
+index: 424
+, y: 30
+index: 424
+, y: 31
+index: 41
+, y: 2
+index: 41
+, y: 3
+index: 41
+, y: 4
+index: 41
+, y: 5
+index: 41
+, y: 6
+index: 41
+, y: 7
+index: 169
+, y: 8
+index: 169
+, y: 9
+index: 169
+, y: 10
+index: 169
+, y: 11
+index: 169
+, y: 12
+index: 169
+, y: 13
+index: 169
+, y: 14
+index: 169
+, y: 15
+index: 297
+, y: 16
+index: 297
+, y: 17
+index: 297
+, y: 18
+index: 297
+, y: 19
+index: 297
+, y: 20
+index: 297
+, y: 21
+index: 297
+, y: 22
+index: 297
+, y: 23
+index: 425
+, y: 24
+index: 425
+, y: 25
+index: 425
+, y: 26
+index: 425
+, y: 27
+index: 425
+, y: 28
+index: 425
+, y: 29
+index: 425
+, y: 30
+index: 425
+, y: 31
+index: 42
+, y: 2
+index: 42
+, y: 3
+index: 42
+, y: 4
+index: 42
+, y: 5
+index: 42
+, y: 6
+index: 42
+, y: 7
+index: 170
+, y: 8
+index: 170
+, y: 9
+index: 170
+, y: 10
+index: 170
+, y: 11
+index: 170
+, y: 12
+index: 170
+, y: 13
+index: 170
+, y: 14
+index: 170
+, y: 15
+index: 298
+, y: 16
+index: 298
+, y: 17
+index: 298
+, y: 18
+index: 298
+, y: 19
+index: 298
+, y: 20
+index: 298
+, y: 21
+index: 298
+, y: 22
+index: 298
+, y: 23
+index: 426
+, y: 24
+index: 426
+, y: 25
+index: 426
+, y: 26
+index: 426
+, y: 27
+index: 426
+, y: 28
+index: 426
+, y: 29
+index: 426
+, y: 30
+index: 426
+, y: 31
+index: 43
+, y: 2
+index: 43
+, y: 3
+index: 43
+, y: 4
+index: 43
+, y: 5
+index: 43
+, y: 6
+index: 43
+, y: 7
+index: 171
+, y: 8
+index: 171
+, y: 9
+index: 171
+, y: 10
+index: 171
+, y: 11
+index: 171
+, y: 12
+index: 171
+, y: 13
+index: 171
+, y: 14
+index: 171
+, y: 15
+index: 299
+, y: 16
+index: 299
+, y: 17
+index: 299
+, y: 18
+index: 299
+, y: 19
+index: 299
+, y: 20
+index: 299
+, y: 21
+index: 299
+, y: 22
+index: 299
+, y: 23
+index: 427
+, y: 24
+index: 427
+, y: 25
+index: 427
+, y: 26
+index: 427
+, y: 27
+index: 427
+, y: 28
+index: 427
+, y: 29
+index: 427
+, y: 30
+index: 427
+, y: 31
+index: 44
+, y: 2
+index: 44
+, y: 3
+index: 44
+, y: 4
+index: 44
+, y: 5
+index: 44
+, y: 6
+index: 44
+, y: 7
+index: 172
+, y: 8
+index: 172
+, y: 9
+index: 172
+, y: 10
+index: 172
+, y: 11
+index: 172
+, y: 12
+index: 172
+, y: 13
+index: 172
+, y: 14
+index: 172
+, y: 15
+index: 300
+, y: 16
+index: 300
+, y: 17
+index: 300
+, y: 18
+index: 300
+, y: 19
+index: 300
+, y: 20
+index: 300
+, y: 21
+index: 300
+, y: 22
+index: 300
+, y: 23
+index: 428
+, y: 24
+index: 428
+, y: 25
+index: 428
+, y: 26
+index: 428
+, y: 27
+index: 428
+, y: 28
+index: 428
+, y: 29
+index: 428
+, y: 30
+index: 428
+, y: 31
+index: 45
+, y: 2
+index: 45
+, y: 3
+index: 45
+, y: 4
+index: 45
+, y: 5
+index: 45
+, y: 6
+index: 45
+, y: 7
+index: 173
+, y: 8
+index: 173
+, y: 9
+index: 173
+, y: 10
+index: 173
+, y: 11
+index: 173
+, y: 12
+index: 173
+, y: 13
+index: 173
+, y: 14
+index: 173
+, y: 15
+index: 301
+, y: 16
+index: 301
+, y: 17
+index: 301
+, y: 18
+index: 301
+, y: 19
+index: 301
+, y: 20
+index: 301
+, y: 21
+index: 301
+, y: 22
+index: 301
+, y: 23
+index: 429
+, y: 24
+index: 429
+, y: 25
+index: 429
+, y: 26
+index: 429
+, y: 27
+index: 429
+, y: 28
+index: 429
+, y: 29
+index: 429
+, y: 30
+index: 429
+, y: 31
+index: 46
+, y: 2
+index: 46
+, y: 3
+index: 46
+, y: 4
+index: 46
+, y: 5
+index: 46
+, y: 6
+index: 46
+, y: 7
+index: 174
+, y: 8
+index: 174
+, y: 9
+index: 174
+, y: 10
+index: 174
+, y: 11
+index: 174
+, y: 12
+index: 174
+, y: 13
+index: 174
+, y: 14
+index: 174
+, y: 15
+index: 302
+, y: 16
+index: 302
+, y: 17
+index: 302
+, y: 18
+index: 302
+, y: 19
+index: 302
+, y: 20
+index: 302
+, y: 21
+index: 302
+, y: 22
+index: 302
+, y: 23
+index: 430
+, y: 24
+index: 430
+, y: 25
+index: 430
+, y: 26
+index: 430
+, y: 27
+index: 430
+, y: 28
+index: 430
+, y: 29
+index: 430
+, y: 30
+index: 430
+, y: 31
+index: 47
+, y: 2
+index: 47
+, y: 3
+index: 47
+, y: 4
+index: 47
+, y: 5
+index: 47
+, y: 6
+index: 47
+, y: 7
+index: 175
+, y: 8
+index: 175
+, y: 9
+index: 175
+, y: 10
+index: 175
+, y: 11
+index: 175
+, y: 12
+index: 175
+, y: 13
+index: 175
+, y: 14
+index: 175
+, y: 15
+index: 303
+, y: 16
+index: 303
+, y: 17
+index: 303
+, y: 18
+index: 303
+, y: 19
+index: 303
+, y: 20
+index: 303
+, y: 21
+index: 303
+, y: 22
+index: 303
+, y: 23
+index: 431
+, y: 24
+index: 431
+, y: 25
+index: 431
+, y: 26
+index: 431
+, y: 27
+index: 431
+, y: 28
+index: 431
+, y: 29
+index: 431
+, y: 30
+index: 431
+, y: 31
+index: 48
+, y: 2
+index: 48
+, y: 3
+index: 48
+, y: 4
+index: 48
+, y: 5
+index: 48
+, y: 6
+index: 48
+, y: 7
+index: 176
+, y: 8
+index: 176
+, y: 9
+index: 176
+, y: 10
+index: 176
+, y: 11
+index: 176
+, y: 12
+index: 176
+, y: 13
+index: 176
+, y: 14
+index: 176
+, y: 15
+index: 304
+, y: 16
+index: 304
+, y: 17
+index: 304
+, y: 18
+index: 304
+, y: 19
+index: 304
+, y: 20
+index: 304
+, y: 21
+index: 304
+, y: 22
+index: 304
+, y: 23
+index: 432
+, y: 24
+index: 432
+, y: 25
+index: 432
+, y: 26
+index: 432
+, y: 27
+index: 432
+, y: 28
+index: 432
+, y: 29
+index: 432
+, y: 30
+index: 432
+, y: 31
+index: 49
+, y: 2
+index: 49
+, y: 3
+index: 49
+, y: 4
+index: 49
+, y: 5
+index: 49
+, y: 6
+index: 49
+, y: 7
+index: 177
+, y: 8
+index: 177
+, y: 9
+index: 177
+, y: 10
+index: 177
+, y: 11
+index: 177
+, y: 12
+index: 177
+, y: 13
+index: 177
+, y: 14
+index: 177
+, y: 15
+index: 305
+, y: 16
+index: 305
+, y: 17
+index: 305
+, y: 18
+index: 305
+, y: 19
+index: 305
+, y: 20
+index: 305
+, y: 21
+index: 305
+, y: 22
+index: 305
+, y: 23
+index: 433
+, y: 24
+index: 433
+, y: 25
+index: 433
+, y: 26
+index: 433
+, y: 27
+index: 433
+, y: 28
+index: 433
+, y: 29
+index: 433
+, y: 30
+index: 433
+, y: 31
+index: 0
+, y: 1
+Byte 0: 0xFF
+[0;32mI (2529) main_task: Returned from app_main()[0m
