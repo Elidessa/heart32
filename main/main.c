@@ -16,7 +16,6 @@ void update_waveform(int val);
 
 int scale_y(int val) {
   static int min = 4095, max = 0;
-  // Simple dynamic window: find min/max in current buffer
   for (int i = 0; i < 128; i++) {
     if (plot_buf[i] < min)
       min = plot_buf[i];
@@ -39,9 +38,10 @@ void display_task(void *pvParameters) {
 
     memset(canvas, 0, 512);
 
-		for(int x = 0; x<128; x++){
+		for(int x = 0; x<127; x++){
 			int y = scale_y(plot_buf[x]);
-			set_pixel(x, y, canvas);
+			int next_y = scale_y(plot_buf[x+1]);
+			draw_line(x, y, x + 1, next_y, canvas);
 		}
 
 		esp_lcd_panel_draw_bitmap(panel_handle, 0, 0, 128, 32, canvas);
