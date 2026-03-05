@@ -33,5 +33,5 @@ void draw_square(int x, int y, int size, uint8_t *canvas);
 void draw_line(int x1, int y1, int x2, int y2, uint8_t *canvas);
 
 
-void draw_figure_on_canvas(uint8_t* canvas, character* fig);
+void draw_figure_on_canvas(uint8_t* canvas, const character* fig);
 #endif

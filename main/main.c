@@ -1,16 +1,17 @@
 #include <stdint.h>
+#include "freertos/projdefs.h"
 #include <string.h>
 #include "esp_lcd_types.h"
 #include "esp_lcd_panel_ops.h"
-#include "freertos/projdefs.h"
 
 
 #define R32
 #include "lcd.h"
 #include <esp_task_wdt.h>
 #include "types.h"
+#include "font.h"
 
-character heart1 = {
+const character heart1 = {
 		.x = 9,
 		.y = 9,
 		.elements = {
@@ -25,7 +26,7 @@ character heart1 = {
 				0,0,0,0,0,0,0,0,0
 		}
 };
-character heart2 = {
+const character heart2 = {
 		.x = 9,
 		.y = 9,
 		.elements = {
@@ -40,7 +41,7 @@ character heart2 = {
 				0,0,0,0,0,0,0,0,0
 		}
 };
-character face = {
+const character face = {
 		.x = 9,
 		.y = 9,
 		.elements = {
@@ -75,7 +76,7 @@ void app_main(void){
 		esp_lcd_panel_handle_t panel_handle = lcd_panel_setup();	
 
 		draw_line(100, 0, 50, 30, canvas);
-		
+		draw_text("hej", 1, 1, canvas);
 		esp_lcd_panel_draw_bitmap(panel_handle, 0, 0, 128, 32, canvas);
 
 		/*
