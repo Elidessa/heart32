@@ -1,26 +1,12 @@
 #ifndef LCD_H
 #define LCD_H
 
-#include "driver/i2c_master.h"
-#include "esp_err.h"
-#include "esp_lcd_io_i2c.h"
-#include "esp_lcd_panel_dev.h"
-#include "esp_lcd_panel_ops.h"
-#include "esp_lcd_panel_ssd1306.h"
 #include "esp_lcd_types.h"
-#include "hal/lcd_types.h"
-#include "soc/gpio_num.h"
 #include <stdint.h>
 #include "symbols.h"
-#include <string.h>
 
-#ifdef R32
-#define I2C_MASTER_SCL_IO 32
-#define I2C_MASTER_SDA_IO 33
-#else
-#define I2C_MASTER_SCL_IO 32
-#define I2C_MASTER_SDA_IO 33 
-#endif
+#define I2C_MASTER_SCL_IO 22
+#define I2C_MASTER_SDA_IO 21
 
 #define TEST_I2C_PORT -1
 #define LCD_ADDR 0x3C

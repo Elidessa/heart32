@@ -1,9 +1,18 @@
 #include "lcd.h"
 #include <stdint.h>
 #include <esp_task_wdt.h>
-
+#include "driver/i2c_master.h"
+#include "esp_err.h"
+#include "esp_lcd_io_i2c.h"
+#include "esp_lcd_panel_dev.h"
+#include "hal/lcd_types.h"
+#include "soc/gpio_num.h"
+#include "esp_lcd_panel_ops.h"
+#include "esp_lcd_panel_ssd1306.h"
 #include "freertos/projdefs.h"
 #include "symbols.h"
+#include <string.h>
+
 esp_lcd_panel_handle_t lcd_panel_setup() {
   i2c_master_bus_config_t i2c_mst_config = {
       .clk_source = I2C_CLK_SRC_DEFAULT,
