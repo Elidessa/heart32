@@ -1,6 +1,9 @@
 #include "lcd.h"
 #include <stdint.h>
+#include <esp_task_wdt.h>
 
+#include "freertos/projdefs.h"
+#include "symbols.h"
 esp_lcd_panel_handle_t lcd_panel_setup() {
   i2c_master_bus_config_t i2c_mst_config = {
       .clk_source = I2C_CLK_SRC_DEFAULT,
@@ -63,6 +66,10 @@ esp_lcd_panel_handle_t lcd_panel_setup() {
 void set_pixel(int x, int y, uint8_t *canvas) {
   int index = (y / 8) * 128 + x;
   canvas[index] |= (1 << (y % 8));
+}
+void clear_pixel(int x, int y, uint8_t *canvas){
+  int index = (y / 8) * 128 + x;
+  canvas[index] &= (0 << (y % 8));
 }
 
 void draw_square(int x, int y, int size, uint8_t *canvas) {
@@ -149,4 +156,34 @@ void draw_figure_on_canvas(uint8_t *canvas, const character *fig) {
     if (i % fig_x == fig_x - 1)
       y++;
   }
+}
+void clear_figure_on_canvas(uint8_t *canvas, const character *fig) {
+  int fig_x = fig->x;
+  int fig_y = fig->y;
+
+  int y = 0;
+  for (int i = 0; i < fig_x * fig_y; i++) {
+    if (fig->elements[i])
+      clear_pixel(i % fig_x, y, canvas);
+    if (i % fig_x == fig_x - 1)
+      y++;
+  }
+}
+
+void animate_heart(esp_lcd_panel_handle_t panel_handle, uint8_t* canvas ){
+		clear_figure_on_canvas(canvas, &heart2);
+		draw_figure_on_canvas(canvas, &heart1);
+
+		esp_lcd_panel_draw_bitmap(panel_handle, 0, 0,
+						128, 32 , canvas);
+
+		vTaskDelay(pdMS_TO_TICKS(500));
+		clear_figure_on_canvas(canvas, &heart1);
+
+		draw_figure_on_canvas(canvas, &heart2);
+
+
+		esp_lcd_panel_draw_bitmap(panel_handle, 0, 0,
+						128, 32 , canvas);
+		vTaskDelay(pdMS_TO_TICKS(100));
 }
