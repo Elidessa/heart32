@@ -6,7 +6,6 @@
 
 
 #define R32
-
 #include "lcd.h"
 #include <esp_task_wdt.h>
 #include "types.h"
@@ -75,9 +74,15 @@ void app_main(void){
 
 		esp_lcd_panel_handle_t panel_handle = lcd_panel_setup();	
 
+		draw_line(100, 0, 50, 30, canvas);
+		
+		esp_lcd_panel_draw_bitmap(panel_handle, 0, 0, 128, 32, canvas);
+
+		/*
 		while(true){
 				animate_heart(panel_handle, canvas);
 		}
+		*/
 
 }
 void animate_heart(esp_lcd_panel_handle_t panel_handle, uint8_t* canvas ){

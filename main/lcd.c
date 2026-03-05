@@ -1,4 +1,5 @@
 #include "lcd.h"
+#include <stdint.h>
 
 esp_lcd_panel_handle_t lcd_panel_setup() {
   i2c_master_bus_config_t i2c_mst_config = {
@@ -76,21 +77,67 @@ void draw_square(int x, int y, int size, uint8_t *canvas) {
 }
 
 void draw_line(int x1, int y1, int x2, int y2, uint8_t *canvas) {
-  int dx = x2 - x1;
-  int dy = y2 - y1;
-  int D = 2 * dy - dx;
-  int y = y1;
+  uint8_t tmp;
+  uint8_t x, y;
+  uint8_t dx, dy;
+  int8_t err;
+  int8_t ystep;
 
-  for (int x = x1; x <= x2; x++) {
-    set_pixel(x, y, canvas);
-    if (D > 0) {
-      y = y + 1;
-      D = D + (2 * (dy - dx));
-    } else {
-      D = D + 2 * dy;
+  uint8_t swapxy = 0;
+
+  if (x1 > x2)
+    dx = x1 - x2;
+  else
+    dx = x2 - x1;
+  if (y1 > y2)
+    dy = y1 - y2;
+  else
+    dy = y2 - y1;
+
+  if (dy > dx) {
+    swapxy = 1;
+    tmp = dx;
+    dx = dy;
+    dy = tmp;
+    tmp = x1;
+    x1 = y1;
+    y1 = tmp;
+    tmp = x2;
+    x2 = y2;
+    y2 = tmp;
+  }
+
+  if (x1 > x2) {
+    tmp = x1;
+    x1 = x2;
+    x2 = tmp;
+    tmp = y1;
+    y1 = y2;
+    y2 = tmp;
+  }
+  err = dx >> 1;
+  if (y2 > y1)
+    ystep = 1;
+  else
+    ystep = -1;
+  y = y1;
+
+  if (x2 == 255)
+    x2--;
+
+  for (x = x1; x <= x2; x++) {
+    if (swapxy == 0)
+      set_pixel(x, y, canvas);
+    else
+      set_pixel(y, x, canvas);
+    err -= (uint8_t)dy;
+    if (err < 0) {
+      y += (uint8_t)ystep;
+      err += (uint8_t)dx;
     }
   }
 }
+
 void draw_figure_on_canvas(uint8_t *canvas, character *fig) {
   int fig_x = fig->x;
   int fig_y = fig->y;

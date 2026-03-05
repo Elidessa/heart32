@@ -14,11 +14,11 @@
 #include <types.h>
 
 #ifdef R32
-#define I2C_MASTER_SCL_IO 25 
-#define I2C_MASTER_SDA_IO 26
+#define I2C_MASTER_SCL_IO 22
+#define I2C_MASTER_SDA_IO 21
 #else
-#define I2C_MASTER_SCL_IO 31	
-#define I2C_MASTER_SDA_IO 32
+#define I2C_MASTER_SCL_IO 22
+#define I2C_MASTER_SDA_IO 21 
 #endif
 
 #define TEST_I2C_PORT -1
