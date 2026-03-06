@@ -25,6 +25,7 @@ int scale_y(int val) {
   int range = (max - min > 10) ? (max - min) : 10;
   return 31 - ((val - min) * 31 / range);
 }
+
 void display_task(void *pvParameters) {
   esp_lcd_panel_handle_t panel_handle = (esp_lcd_panel_handle_t)pvParameters;
   uint8_t *canvas = malloc(128 * 32 / 8);
@@ -38,20 +39,19 @@ void display_task(void *pvParameters) {
 
     memset(canvas, 0, 512);
 
-		for(int x = 0; x<127; x++){
-			int y = scale_y(plot_buf[x]);
-			int next_y = scale_y(plot_buf[x+1]);
-			draw_line(x, y, x + 1, next_y, canvas);
-		}
+    for (int x = 0; x < 127; x++) {
+      int y = scale_y(plot_buf[x]);
+      int next_y = scale_y(plot_buf[x + 1]);
+      draw_line(x, y, x + 1, next_y, canvas);
+    }
 
-		esp_lcd_panel_draw_bitmap(panel_handle, 0, 0, 128, 32, canvas);
-		vTaskDelay(pdMS_TO_TICKS(50));
+    esp_lcd_panel_draw_bitmap(panel_handle, 0, 0, 128, 32, canvas);
+    vTaskDelay(pdMS_TO_TICKS(50));
   }
 }
 
 void update_waveform(int val) {
   memmove(plot_buf, plot_buf + 1, sizeof(int) * (128 - 1));
-  plot_buf[127] = val;
 }
 
 void app_main(void) {
@@ -62,5 +62,4 @@ void app_main(void) {
 
   xTaskCreate(display_task, "display_task", 4096, (void *)panel_handle, 5,
               NULL);
-
 }

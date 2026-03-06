@@ -1,0 +1,3169 @@
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindGit.cmake:111 (find_program)"
+      - "/opt/esp-idf/tools/cmake/git_submodules.cmake:1 (find_package)"
+      - "/opt/esp-idf/tools/cmake/idf.cmake:41 (include)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:29 (include)"
+      - "CMakeLists.txt:4 (include)"
+    mode: "program"
+    variable: "GIT_EXECUTABLE"
+    description: "Git command line client"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "git"
+    candidate_directories:
+      - "/home/minipops/.local/share/nvim/mason/bin/"
+      - "/opt/esp-idf/components/espcoredump/"
+      - "/opt/esp-idf/components/partition_table/"
+      - "/opt/esp-idf/components/app_update/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/"
+      - "/opt/esp-idf/tools/"
+      - "/home/minipops/work/kattis-cli/"
+      - "/home/minipops/bin/"
+      - "/home/minipops/.local/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/minipops/.local/share/nvim/mason/bin/git"
+      - "/opt/esp-idf/components/espcoredump/git"
+      - "/opt/esp-idf/components/partition_table/git"
+      - "/opt/esp-idf/components/app_update/git"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/git"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/git"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/git"
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/git"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/git"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/git"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/git"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/git"
+      - "/opt/esp-idf/tools/git"
+      - "/home/minipops/work/kattis-cli/git"
+      - "/home/minipops/bin/git"
+      - "/home/minipops/.local/bin/git"
+      - "/usr/local/bin/git"
+      - "/usr/local/sbin/git"
+    found: "/usr/bin/git"
+    search_context:
+      ENV{PATH}:
+        - "/home/minipops/.local/share/nvim/mason/bin"
+        - "/opt/esp-idf/components/espcoredump"
+        - "/opt/esp-idf/components/partition_table"
+        - "/opt/esp-idf/components/app_update"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
+        - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
+        - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin"
+        - "/opt/esp-idf/tools"
+        - "/home/minipops/work/kattis-cli"
+        - "/home/minipops/bin"
+        - "/home/minipops/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/home/minipops/.local/share/nvim/mason/bin/"
+      - "/opt/esp-idf/components/espcoredump/"
+      - "/opt/esp-idf/components/partition_table/"
+      - "/opt/esp-idf/components/app_update/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/"
+      - "/opt/esp-idf/tools/"
+      - "/home/minipops/work/kattis-cli/"
+      - "/home/minipops/bin/"
+      - "/home/minipops/.local/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/bin/"
+    searched_directories:
+      - "/home/minipops/.local/share/nvim/mason/bin/uname"
+      - "/opt/esp-idf/components/espcoredump/uname"
+      - "/opt/esp-idf/components/partition_table/uname"
+      - "/opt/esp-idf/components/app_update/uname"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/uname"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/uname"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/uname"
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/uname"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/uname"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/uname"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/uname"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/uname"
+      - "/opt/esp-idf/tools/uname"
+      - "/home/minipops/work/kattis-cli/uname"
+      - "/home/minipops/bin/uname"
+      - "/home/minipops/.local/bin/uname"
+      - "/usr/local/bin/uname"
+      - "/usr/local/sbin/uname"
+    found: "/usr/bin/uname"
+    search_context:
+      ENV{PATH}:
+        - "/home/minipops/.local/share/nvim/mason/bin"
+        - "/opt/esp-idf/components/espcoredump"
+        - "/opt/esp-idf/components/partition_table"
+        - "/opt/esp-idf/components/app_update"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
+        - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
+        - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin"
+        - "/opt/esp-idf/tools"
+        - "/home/minipops/work/kattis-cli"
+        - "/home/minipops/bin"
+        - "/home/minipops/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:207 (message)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      The target system is: Generic -  - 
+      The host system is: Linux - 6.18.8-arch2-1 - x86_64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeNinjaFindMake.cmake:5 (find_program)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    mode: "program"
+    variable: "CMAKE_MAKE_PROGRAM"
+    description: "Program used to build from build.ninja files."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ninja-build"
+      - "ninja"
+      - "samu"
+    candidate_directories:
+      - "/home/minipops/.local/share/nvim/mason/bin/"
+      - "/opt/esp-idf/components/espcoredump/"
+      - "/opt/esp-idf/components/partition_table/"
+      - "/opt/esp-idf/components/app_update/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/"
+      - "/opt/esp-idf/tools/"
+      - "/home/minipops/work/kattis-cli/"
+      - "/home/minipops/bin/"
+      - "/home/minipops/.local/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/minipops/.local/share/nvim/mason/bin/ninja-build"
+      - "/home/minipops/.local/share/nvim/mason/bin/ninja"
+      - "/home/minipops/.local/share/nvim/mason/bin/samu"
+      - "/opt/esp-idf/components/espcoredump/ninja-build"
+      - "/opt/esp-idf/components/espcoredump/ninja"
+      - "/opt/esp-idf/components/espcoredump/samu"
+      - "/opt/esp-idf/components/partition_table/ninja-build"
+      - "/opt/esp-idf/components/partition_table/ninja"
+      - "/opt/esp-idf/components/partition_table/samu"
+      - "/opt/esp-idf/components/app_update/ninja-build"
+      - "/opt/esp-idf/components/app_update/ninja"
+      - "/opt/esp-idf/components/app_update/samu"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/ninja-build"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/ninja"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/samu"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/ninja-build"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/ninja"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/samu"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/ninja-build"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/ninja"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/samu"
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/ninja-build"
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/ninja"
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/samu"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/ninja-build"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/ninja"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/samu"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/ninja-build"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/ninja"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/samu"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/ninja-build"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/ninja"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/samu"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/ninja-build"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/ninja"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/samu"
+      - "/opt/esp-idf/tools/ninja-build"
+      - "/opt/esp-idf/tools/ninja"
+      - "/opt/esp-idf/tools/samu"
+      - "/home/minipops/work/kattis-cli/ninja-build"
+      - "/home/minipops/work/kattis-cli/ninja"
+      - "/home/minipops/work/kattis-cli/samu"
+      - "/home/minipops/bin/ninja-build"
+      - "/home/minipops/bin/ninja"
+      - "/home/minipops/bin/samu"
+      - "/home/minipops/.local/bin/ninja-build"
+      - "/home/minipops/.local/bin/ninja"
+      - "/home/minipops/.local/bin/samu"
+      - "/usr/local/bin/ninja-build"
+      - "/usr/local/bin/ninja"
+      - "/usr/local/bin/samu"
+      - "/usr/local/sbin/ninja-build"
+      - "/usr/local/sbin/ninja"
+      - "/usr/local/sbin/samu"
+      - "/usr/bin/ninja-build"
+    found: "/usr/bin/ninja"
+    search_context:
+      ENV{PATH}:
+        - "/home/minipops/.local/share/nvim/mason/bin"
+        - "/opt/esp-idf/components/espcoredump"
+        - "/opt/esp-idf/components/partition_table"
+        - "/opt/esp-idf/components/app_update"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
+        - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
+        - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin"
+        - "/opt/esp-idf/tools"
+        - "/home/minipops/work/kattis-cli"
+        - "/home/minipops/bin"
+        - "/home/minipops/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompiler.cmake:115 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:67 (_cmake_find_compiler_path)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "clang"
+    candidate_directories:
+      - "/home/minipops/.local/share/nvim/mason/bin/"
+      - "/opt/esp-idf/components/espcoredump/"
+      - "/opt/esp-idf/components/partition_table/"
+      - "/opt/esp-idf/components/app_update/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/"
+      - "/opt/esp-idf/tools/"
+      - "/home/minipops/work/kattis-cli/"
+      - "/home/minipops/bin/"
+      - "/home/minipops/.local/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/minipops/.local/share/nvim/mason/bin/clang"
+      - "/opt/esp-idf/components/espcoredump/clang"
+      - "/opt/esp-idf/components/partition_table/clang"
+      - "/opt/esp-idf/components/app_update/clang"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/clang"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/clang"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/clang"
+    found: "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang"
+    search_context:
+      ENV{PATH}:
+        - "/home/minipops/.local/share/nvim/mason/bin"
+        - "/opt/esp-idf/components/espcoredump"
+        - "/opt/esp-idf/components/partition_table"
+        - "/opt/esp-idf/components/app_update"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
+        - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
+        - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin"
+        - "/opt/esp-idf/tools"
+        - "/home/minipops/work/kattis-cli"
+        - "/home/minipops/bin"
+        - "/home/minipops/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "/usr/share/cmake/Modules/"
+      - "/opt/esp-idf/tools/cmake/"
+      - "/opt/esp-idf/tools/cmake/third_party/"
+    found: "/usr/share/cmake/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "/home/minipops/.local/share/nvim/mason/bin"
+        - "/opt/esp-idf/components/espcoredump"
+        - "/opt/esp-idf/components/partition_table"
+        - "/opt/esp-idf/components/app_update"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
+        - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
+        - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin"
+        - "/opt/esp-idf/tools"
+        - "/home/minipops/work/kattis-cli"
+        - "/home/minipops/bin"
+        - "/home/minipops/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang 
+      Build flags: --target=xtensa-esp-elf;-mcpu=esp32
+      Id flags:  
+      
+      The output was:
+      1
+      /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/ld.lld: error while loading shared libraries: libxml2.so.2: cannot open shared object file: No such file or directory
+      clang: error: unable to execute command: No such file or directory
+      clang: error: ld command failed due to signal (use -v to see invocation)
+      
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "/usr/share/cmake/Modules/"
+      - "/opt/esp-idf/tools/cmake/"
+      - "/opt/esp-idf/tools/cmake/third_party/"
+    found: "/usr/share/cmake/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "/home/minipops/.local/share/nvim/mason/bin"
+        - "/opt/esp-idf/components/espcoredump"
+        - "/opt/esp-idf/components/partition_table"
+        - "/opt/esp-idf/components/app_update"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
+        - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
+        - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin"
+        - "/opt/esp-idf/tools"
+        - "/home/minipops/work/kattis-cli"
+        - "/home/minipops/bin"
+        - "/home/minipops/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang 
+      Build flags: --target=xtensa-esp-elf;-mcpu=esp32
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is Clang, found in:
+        /home/minipops/uni/da383a/heart32/build.clang/CMakeFiles/4.2.3/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:58 (__resolve_tool_path)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "xtensa-esp32-elf-clang-ld"
+    candidate_directories:
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/"
+      - "/home/minipops/.local/share/nvim/mason/bin/"
+      - "/opt/esp-idf/components/espcoredump/"
+      - "/opt/esp-idf/components/partition_table/"
+      - "/opt/esp-idf/components/app_update/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/"
+      - "/opt/esp-idf/tools/"
+      - "/home/minipops/work/kattis-cli/"
+      - "/home/minipops/bin/"
+      - "/home/minipops/.local/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    found: "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/xtensa-esp32-elf-clang-ld"
+    search_context:
+      ENV{PATH}:
+        - "/home/minipops/.local/share/nvim/mason/bin"
+        - "/opt/esp-idf/components/espcoredump"
+        - "/opt/esp-idf/components/partition_table"
+        - "/opt/esp-idf/components/app_update"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
+        - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
+        - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin"
+        - "/opt/esp-idf/tools"
+        - "/home/minipops/work/kattis-cli"
+        - "/home/minipops/bin"
+        - "/home/minipops/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-strip"
+      - "strip"
+    candidate_directories:
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/"
+      - "/home/minipops/.local/share/nvim/mason/bin/"
+      - "/opt/esp-idf/components/espcoredump/"
+      - "/opt/esp-idf/components/partition_table/"
+      - "/opt/esp-idf/components/app_update/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/"
+      - "/opt/esp-idf/tools/"
+      - "/home/minipops/work/kattis-cli/"
+      - "/home/minipops/bin/"
+      - "/home/minipops/.local/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    found: "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/llvm-strip"
+    search_context:
+      ENV{PATH}:
+        - "/home/minipops/.local/share/nvim/mason/bin"
+        - "/opt/esp-idf/components/espcoredump"
+        - "/opt/esp-idf/components/partition_table"
+        - "/opt/esp-idf/components/app_update"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
+        - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
+        - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin"
+        - "/opt/esp-idf/tools"
+        - "/home/minipops/work/kattis-cli"
+        - "/home/minipops/bin"
+        - "/home/minipops/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-nm"
+      - "nm"
+    candidate_directories:
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/"
+      - "/home/minipops/.local/share/nvim/mason/bin/"
+      - "/opt/esp-idf/components/espcoredump/"
+      - "/opt/esp-idf/components/partition_table/"
+      - "/opt/esp-idf/components/app_update/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/"
+      - "/opt/esp-idf/tools/"
+      - "/home/minipops/work/kattis-cli/"
+      - "/home/minipops/bin/"
+      - "/home/minipops/.local/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    found: "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/llvm-nm"
+    search_context:
+      ENV{PATH}:
+        - "/home/minipops/.local/share/nvim/mason/bin"
+        - "/opt/esp-idf/components/espcoredump"
+        - "/opt/esp-idf/components/partition_table"
+        - "/opt/esp-idf/components/app_update"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
+        - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
+        - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin"
+        - "/opt/esp-idf/tools"
+        - "/home/minipops/work/kattis-cli"
+        - "/home/minipops/bin"
+        - "/home/minipops/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-objcopy"
+      - "objcopy"
+    candidate_directories:
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/"
+      - "/home/minipops/.local/share/nvim/mason/bin/"
+      - "/opt/esp-idf/components/espcoredump/"
+      - "/opt/esp-idf/components/partition_table/"
+      - "/opt/esp-idf/components/app_update/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/"
+      - "/opt/esp-idf/tools/"
+      - "/home/minipops/work/kattis-cli/"
+      - "/home/minipops/bin/"
+      - "/home/minipops/.local/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    found: "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/llvm-objcopy"
+    search_context:
+      ENV{PATH}:
+        - "/home/minipops/.local/share/nvim/mason/bin"
+        - "/opt/esp-idf/components/espcoredump"
+        - "/opt/esp-idf/components/partition_table"
+        - "/opt/esp-idf/components/app_update"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
+        - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
+        - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin"
+        - "/opt/esp-idf/tools"
+        - "/home/minipops/work/kattis-cli"
+        - "/home/minipops/bin"
+        - "/home/minipops/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-readelf"
+      - "readelf"
+    candidate_directories:
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/"
+      - "/home/minipops/.local/share/nvim/mason/bin/"
+      - "/opt/esp-idf/components/espcoredump/"
+      - "/opt/esp-idf/components/partition_table/"
+      - "/opt/esp-idf/components/app_update/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/"
+      - "/opt/esp-idf/tools/"
+      - "/home/minipops/work/kattis-cli/"
+      - "/home/minipops/bin/"
+      - "/home/minipops/.local/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    found: "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/llvm-readelf"
+    search_context:
+      ENV{PATH}:
+        - "/home/minipops/.local/share/nvim/mason/bin"
+        - "/opt/esp-idf/components/espcoredump"
+        - "/opt/esp-idf/components/partition_table"
+        - "/opt/esp-idf/components/app_update"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
+        - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
+        - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin"
+        - "/opt/esp-idf/tools"
+        - "/home/minipops/work/kattis-cli"
+        - "/home/minipops/bin"
+        - "/home/minipops/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-dlltool"
+      - "dlltool"
+    candidate_directories:
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/"
+      - "/home/minipops/.local/share/nvim/mason/bin/"
+      - "/opt/esp-idf/components/espcoredump/"
+      - "/opt/esp-idf/components/partition_table/"
+      - "/opt/esp-idf/components/app_update/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/"
+      - "/opt/esp-idf/tools/"
+      - "/home/minipops/work/kattis-cli/"
+      - "/home/minipops/bin/"
+      - "/home/minipops/.local/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/llvm-dlltool"
+      - "/home/minipops/.local/share/nvim/mason/bin/llvm-dlltool"
+      - "/opt/esp-idf/components/espcoredump/llvm-dlltool"
+      - "/opt/esp-idf/components/partition_table/llvm-dlltool"
+      - "/opt/esp-idf/components/app_update/llvm-dlltool"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/llvm-dlltool"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/llvm-dlltool"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/llvm-dlltool"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/llvm-dlltool"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/llvm-dlltool"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/llvm-dlltool"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/llvm-dlltool"
+      - "/opt/esp-idf/tools/llvm-dlltool"
+      - "/home/minipops/work/kattis-cli/llvm-dlltool"
+      - "/home/minipops/bin/llvm-dlltool"
+      - "/home/minipops/.local/bin/llvm-dlltool"
+      - "/usr/local/bin/llvm-dlltool"
+      - "/usr/local/sbin/llvm-dlltool"
+      - "/usr/bin/llvm-dlltool"
+      - "/usr/lib/jvm/default/bin/llvm-dlltool"
+      - "/usr/bin/site_perl/llvm-dlltool"
+      - "/usr/bin/vendor_perl/llvm-dlltool"
+      - "/usr/bin/core_perl/llvm-dlltool"
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/dlltool"
+      - "/home/minipops/.local/share/nvim/mason/bin/dlltool"
+      - "/opt/esp-idf/components/espcoredump/dlltool"
+      - "/opt/esp-idf/components/partition_table/dlltool"
+      - "/opt/esp-idf/components/app_update/dlltool"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/dlltool"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/dlltool"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/dlltool"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/dlltool"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/dlltool"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/dlltool"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/dlltool"
+      - "/opt/esp-idf/tools/dlltool"
+      - "/home/minipops/work/kattis-cli/dlltool"
+      - "/home/minipops/bin/dlltool"
+      - "/home/minipops/.local/bin/dlltool"
+      - "/usr/local/bin/dlltool"
+      - "/usr/local/sbin/dlltool"
+      - "/usr/bin/dlltool"
+      - "/usr/lib/jvm/default/bin/dlltool"
+      - "/usr/bin/site_perl/dlltool"
+      - "/usr/bin/vendor_perl/dlltool"
+      - "/usr/bin/core_perl/dlltool"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/minipops/.local/share/nvim/mason/bin"
+        - "/opt/esp-idf/components/espcoredump"
+        - "/opt/esp-idf/components/partition_table"
+        - "/opt/esp-idf/components/app_update"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
+        - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
+        - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin"
+        - "/opt/esp-idf/tools"
+        - "/home/minipops/work/kattis-cli"
+        - "/home/minipops/bin"
+        - "/home/minipops/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-addr2line"
+      - "addr2line"
+    candidate_directories:
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/"
+      - "/home/minipops/.local/share/nvim/mason/bin/"
+      - "/opt/esp-idf/components/espcoredump/"
+      - "/opt/esp-idf/components/partition_table/"
+      - "/opt/esp-idf/components/app_update/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/"
+      - "/opt/esp-idf/tools/"
+      - "/home/minipops/work/kattis-cli/"
+      - "/home/minipops/bin/"
+      - "/home/minipops/.local/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/llvm-addr2line"
+      - "/home/minipops/.local/share/nvim/mason/bin/llvm-addr2line"
+      - "/opt/esp-idf/components/espcoredump/llvm-addr2line"
+      - "/opt/esp-idf/components/partition_table/llvm-addr2line"
+      - "/opt/esp-idf/components/app_update/llvm-addr2line"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/llvm-addr2line"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/llvm-addr2line"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/llvm-addr2line"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/llvm-addr2line"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/llvm-addr2line"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/llvm-addr2line"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/llvm-addr2line"
+      - "/opt/esp-idf/tools/llvm-addr2line"
+      - "/home/minipops/work/kattis-cli/llvm-addr2line"
+      - "/home/minipops/bin/llvm-addr2line"
+      - "/home/minipops/.local/bin/llvm-addr2line"
+      - "/usr/local/bin/llvm-addr2line"
+      - "/usr/local/sbin/llvm-addr2line"
+      - "/usr/bin/llvm-addr2line"
+      - "/usr/lib/jvm/default/bin/llvm-addr2line"
+      - "/usr/bin/site_perl/llvm-addr2line"
+      - "/usr/bin/vendor_perl/llvm-addr2line"
+      - "/usr/bin/core_perl/llvm-addr2line"
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/addr2line"
+      - "/home/minipops/.local/share/nvim/mason/bin/addr2line"
+      - "/opt/esp-idf/components/espcoredump/addr2line"
+      - "/opt/esp-idf/components/partition_table/addr2line"
+      - "/opt/esp-idf/components/app_update/addr2line"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/addr2line"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/addr2line"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/addr2line"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/addr2line"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/addr2line"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/addr2line"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/addr2line"
+      - "/opt/esp-idf/tools/addr2line"
+      - "/home/minipops/work/kattis-cli/addr2line"
+      - "/home/minipops/bin/addr2line"
+      - "/home/minipops/.local/bin/addr2line"
+      - "/usr/local/bin/addr2line"
+      - "/usr/local/sbin/addr2line"
+    found: "/usr/bin/addr2line"
+    search_context:
+      ENV{PATH}:
+        - "/home/minipops/.local/share/nvim/mason/bin"
+        - "/opt/esp-idf/components/espcoredump"
+        - "/opt/esp-idf/components/partition_table"
+        - "/opt/esp-idf/components/app_update"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
+        - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
+        - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin"
+        - "/opt/esp-idf/tools"
+        - "/home/minipops/work/kattis-cli"
+        - "/home/minipops/bin"
+        - "/home/minipops/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "tapi"
+    candidate_directories:
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/"
+      - "/home/minipops/.local/share/nvim/mason/bin/"
+      - "/opt/esp-idf/components/espcoredump/"
+      - "/opt/esp-idf/components/partition_table/"
+      - "/opt/esp-idf/components/app_update/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/"
+      - "/opt/esp-idf/tools/"
+      - "/home/minipops/work/kattis-cli/"
+      - "/home/minipops/bin/"
+      - "/home/minipops/.local/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/tapi"
+      - "/home/minipops/.local/share/nvim/mason/bin/tapi"
+      - "/opt/esp-idf/components/espcoredump/tapi"
+      - "/opt/esp-idf/components/partition_table/tapi"
+      - "/opt/esp-idf/components/app_update/tapi"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/tapi"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/tapi"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/tapi"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/tapi"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/tapi"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/tapi"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/tapi"
+      - "/opt/esp-idf/tools/tapi"
+      - "/home/minipops/work/kattis-cli/tapi"
+      - "/home/minipops/bin/tapi"
+      - "/home/minipops/.local/bin/tapi"
+      - "/usr/local/bin/tapi"
+      - "/usr/local/sbin/tapi"
+      - "/usr/bin/tapi"
+      - "/usr/lib/jvm/default/bin/tapi"
+      - "/usr/bin/site_perl/tapi"
+      - "/usr/bin/vendor_perl/tapi"
+      - "/usr/bin/core_perl/tapi"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/minipops/.local/share/nvim/mason/bin"
+        - "/opt/esp-idf/components/espcoredump"
+        - "/opt/esp-idf/components/partition_table"
+        - "/opt/esp-idf/components/app_update"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
+        - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
+        - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin"
+        - "/opt/esp-idf/tools"
+        - "/home/minipops/work/kattis-cli"
+        - "/home/minipops/bin"
+        - "/home/minipops/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Compiler/Clang-FindBinUtils.cmake:26 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_AR"
+    description: "LLVM archiver"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-ar-19.1"
+      - "llvm-ar-19"
+      - "llvm-ar19"
+      - "llvm-ar"
+    candidate_directories:
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/"
+      - "/home/minipops/.local/share/nvim/mason/bin/"
+      - "/opt/esp-idf/components/espcoredump/"
+      - "/opt/esp-idf/components/partition_table/"
+      - "/opt/esp-idf/components/app_update/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/"
+      - "/opt/esp-idf/tools/"
+      - "/home/minipops/work/kattis-cli/"
+      - "/home/minipops/bin/"
+      - "/home/minipops/.local/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/llvm-ar-19.1"
+      - "/home/minipops/.local/share/nvim/mason/bin/llvm-ar-19.1"
+      - "/opt/esp-idf/components/espcoredump/llvm-ar-19.1"
+      - "/opt/esp-idf/components/partition_table/llvm-ar-19.1"
+      - "/opt/esp-idf/components/app_update/llvm-ar-19.1"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/llvm-ar-19.1"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/llvm-ar-19.1"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/llvm-ar-19.1"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/llvm-ar-19.1"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/llvm-ar-19.1"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/llvm-ar-19.1"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/llvm-ar-19.1"
+      - "/opt/esp-idf/tools/llvm-ar-19.1"
+      - "/home/minipops/work/kattis-cli/llvm-ar-19.1"
+      - "/home/minipops/bin/llvm-ar-19.1"
+      - "/home/minipops/.local/bin/llvm-ar-19.1"
+      - "/usr/local/bin/llvm-ar-19.1"
+      - "/usr/local/sbin/llvm-ar-19.1"
+      - "/usr/bin/llvm-ar-19.1"
+      - "/usr/lib/jvm/default/bin/llvm-ar-19.1"
+      - "/usr/bin/site_perl/llvm-ar-19.1"
+      - "/usr/bin/vendor_perl/llvm-ar-19.1"
+      - "/usr/bin/core_perl/llvm-ar-19.1"
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/llvm-ar-19"
+      - "/home/minipops/.local/share/nvim/mason/bin/llvm-ar-19"
+      - "/opt/esp-idf/components/espcoredump/llvm-ar-19"
+      - "/opt/esp-idf/components/partition_table/llvm-ar-19"
+      - "/opt/esp-idf/components/app_update/llvm-ar-19"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/llvm-ar-19"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/llvm-ar-19"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/llvm-ar-19"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/llvm-ar-19"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/llvm-ar-19"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/llvm-ar-19"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/llvm-ar-19"
+      - "/opt/esp-idf/tools/llvm-ar-19"
+      - "/home/minipops/work/kattis-cli/llvm-ar-19"
+      - "/home/minipops/bin/llvm-ar-19"
+      - "/home/minipops/.local/bin/llvm-ar-19"
+      - "/usr/local/bin/llvm-ar-19"
+      - "/usr/local/sbin/llvm-ar-19"
+      - "/usr/bin/llvm-ar-19"
+      - "/usr/lib/jvm/default/bin/llvm-ar-19"
+      - "/usr/bin/site_perl/llvm-ar-19"
+      - "/usr/bin/vendor_perl/llvm-ar-19"
+      - "/usr/bin/core_perl/llvm-ar-19"
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/llvm-ar19"
+      - "/home/minipops/.local/share/nvim/mason/bin/llvm-ar19"
+      - "/opt/esp-idf/components/espcoredump/llvm-ar19"
+      - "/opt/esp-idf/components/partition_table/llvm-ar19"
+      - "/opt/esp-idf/components/app_update/llvm-ar19"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/llvm-ar19"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/llvm-ar19"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/llvm-ar19"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/llvm-ar19"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/llvm-ar19"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/llvm-ar19"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/llvm-ar19"
+      - "/opt/esp-idf/tools/llvm-ar19"
+      - "/home/minipops/work/kattis-cli/llvm-ar19"
+      - "/home/minipops/bin/llvm-ar19"
+      - "/home/minipops/.local/bin/llvm-ar19"
+      - "/usr/local/bin/llvm-ar19"
+      - "/usr/local/sbin/llvm-ar19"
+      - "/usr/bin/llvm-ar19"
+      - "/usr/lib/jvm/default/bin/llvm-ar19"
+      - "/usr/bin/site_perl/llvm-ar19"
+      - "/usr/bin/vendor_perl/llvm-ar19"
+      - "/usr/bin/core_perl/llvm-ar19"
+    found: "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/llvm-ar"
+    search_context:
+      ENV{PATH}:
+        - "/home/minipops/.local/share/nvim/mason/bin"
+        - "/opt/esp-idf/components/espcoredump"
+        - "/opt/esp-idf/components/partition_table"
+        - "/opt/esp-idf/components/app_update"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
+        - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
+        - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin"
+        - "/opt/esp-idf/tools"
+        - "/home/minipops/work/kattis-cli"
+        - "/home/minipops/bin"
+        - "/home/minipops/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Compiler/Clang-FindBinUtils.cmake:38 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_RANLIB"
+    description: "Generate index for LLVM archive"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-ranlib-19.1"
+      - "llvm-ranlib-19"
+      - "llvm-ranlib19"
+      - "llvm-ranlib"
+    candidate_directories:
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/"
+      - "/home/minipops/.local/share/nvim/mason/bin/"
+      - "/opt/esp-idf/components/espcoredump/"
+      - "/opt/esp-idf/components/partition_table/"
+      - "/opt/esp-idf/components/app_update/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/"
+      - "/opt/esp-idf/tools/"
+      - "/home/minipops/work/kattis-cli/"
+      - "/home/minipops/bin/"
+      - "/home/minipops/.local/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/llvm-ranlib-19.1"
+      - "/home/minipops/.local/share/nvim/mason/bin/llvm-ranlib-19.1"
+      - "/opt/esp-idf/components/espcoredump/llvm-ranlib-19.1"
+      - "/opt/esp-idf/components/partition_table/llvm-ranlib-19.1"
+      - "/opt/esp-idf/components/app_update/llvm-ranlib-19.1"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/llvm-ranlib-19.1"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/llvm-ranlib-19.1"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/llvm-ranlib-19.1"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/llvm-ranlib-19.1"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/llvm-ranlib-19.1"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/llvm-ranlib-19.1"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/llvm-ranlib-19.1"
+      - "/opt/esp-idf/tools/llvm-ranlib-19.1"
+      - "/home/minipops/work/kattis-cli/llvm-ranlib-19.1"
+      - "/home/minipops/bin/llvm-ranlib-19.1"
+      - "/home/minipops/.local/bin/llvm-ranlib-19.1"
+      - "/usr/local/bin/llvm-ranlib-19.1"
+      - "/usr/local/sbin/llvm-ranlib-19.1"
+      - "/usr/bin/llvm-ranlib-19.1"
+      - "/usr/lib/jvm/default/bin/llvm-ranlib-19.1"
+      - "/usr/bin/site_perl/llvm-ranlib-19.1"
+      - "/usr/bin/vendor_perl/llvm-ranlib-19.1"
+      - "/usr/bin/core_perl/llvm-ranlib-19.1"
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/llvm-ranlib-19"
+      - "/home/minipops/.local/share/nvim/mason/bin/llvm-ranlib-19"
+      - "/opt/esp-idf/components/espcoredump/llvm-ranlib-19"
+      - "/opt/esp-idf/components/partition_table/llvm-ranlib-19"
+      - "/opt/esp-idf/components/app_update/llvm-ranlib-19"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/llvm-ranlib-19"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/llvm-ranlib-19"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/llvm-ranlib-19"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/llvm-ranlib-19"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/llvm-ranlib-19"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/llvm-ranlib-19"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/llvm-ranlib-19"
+      - "/opt/esp-idf/tools/llvm-ranlib-19"
+      - "/home/minipops/work/kattis-cli/llvm-ranlib-19"
+      - "/home/minipops/bin/llvm-ranlib-19"
+      - "/home/minipops/.local/bin/llvm-ranlib-19"
+      - "/usr/local/bin/llvm-ranlib-19"
+      - "/usr/local/sbin/llvm-ranlib-19"
+      - "/usr/bin/llvm-ranlib-19"
+      - "/usr/lib/jvm/default/bin/llvm-ranlib-19"
+      - "/usr/bin/site_perl/llvm-ranlib-19"
+      - "/usr/bin/vendor_perl/llvm-ranlib-19"
+      - "/usr/bin/core_perl/llvm-ranlib-19"
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/llvm-ranlib19"
+      - "/home/minipops/.local/share/nvim/mason/bin/llvm-ranlib19"
+      - "/opt/esp-idf/components/espcoredump/llvm-ranlib19"
+      - "/opt/esp-idf/components/partition_table/llvm-ranlib19"
+      - "/opt/esp-idf/components/app_update/llvm-ranlib19"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/llvm-ranlib19"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/llvm-ranlib19"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/llvm-ranlib19"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/llvm-ranlib19"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/llvm-ranlib19"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/llvm-ranlib19"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/llvm-ranlib19"
+      - "/opt/esp-idf/tools/llvm-ranlib19"
+      - "/home/minipops/work/kattis-cli/llvm-ranlib19"
+      - "/home/minipops/bin/llvm-ranlib19"
+      - "/home/minipops/.local/bin/llvm-ranlib19"
+      - "/usr/local/bin/llvm-ranlib19"
+      - "/usr/local/sbin/llvm-ranlib19"
+      - "/usr/bin/llvm-ranlib19"
+      - "/usr/lib/jvm/default/bin/llvm-ranlib19"
+      - "/usr/bin/site_perl/llvm-ranlib19"
+      - "/usr/bin/vendor_perl/llvm-ranlib19"
+      - "/usr/bin/core_perl/llvm-ranlib19"
+    found: "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/llvm-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/home/minipops/.local/share/nvim/mason/bin"
+        - "/opt/esp-idf/components/espcoredump"
+        - "/opt/esp-idf/components/partition_table"
+        - "/opt/esp-idf/components/app_update"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
+        - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
+        - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin"
+        - "/opt/esp-idf/tools"
+        - "/home/minipops/work/kattis-cli"
+        - "/home/minipops/bin"
+        - "/home/minipops/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Compiler/Clang-FindBinUtils.cmake:50 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_CLANG_SCAN_DEPS"
+    description: "`clang-scan-deps` dependency scanner"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "clang-scan-deps-19.1"
+      - "clang-scan-deps-19"
+      - "clang-scan-deps19"
+      - "clang-scan-deps"
+    candidate_directories:
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/"
+      - "/home/minipops/.local/share/nvim/mason/bin/"
+      - "/opt/esp-idf/components/espcoredump/"
+      - "/opt/esp-idf/components/partition_table/"
+      - "/opt/esp-idf/components/app_update/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/"
+      - "/opt/esp-idf/tools/"
+      - "/home/minipops/work/kattis-cli/"
+      - "/home/minipops/bin/"
+      - "/home/minipops/.local/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang-scan-deps-19.1"
+      - "/home/minipops/.local/share/nvim/mason/bin/clang-scan-deps-19.1"
+      - "/opt/esp-idf/components/espcoredump/clang-scan-deps-19.1"
+      - "/opt/esp-idf/components/partition_table/clang-scan-deps-19.1"
+      - "/opt/esp-idf/components/app_update/clang-scan-deps-19.1"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/clang-scan-deps-19.1"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/clang-scan-deps-19.1"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/clang-scan-deps-19.1"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/clang-scan-deps-19.1"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/clang-scan-deps-19.1"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/clang-scan-deps-19.1"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/clang-scan-deps-19.1"
+      - "/opt/esp-idf/tools/clang-scan-deps-19.1"
+      - "/home/minipops/work/kattis-cli/clang-scan-deps-19.1"
+      - "/home/minipops/bin/clang-scan-deps-19.1"
+      - "/home/minipops/.local/bin/clang-scan-deps-19.1"
+      - "/usr/local/bin/clang-scan-deps-19.1"
+      - "/usr/local/sbin/clang-scan-deps-19.1"
+      - "/usr/bin/clang-scan-deps-19.1"
+      - "/usr/lib/jvm/default/bin/clang-scan-deps-19.1"
+      - "/usr/bin/site_perl/clang-scan-deps-19.1"
+      - "/usr/bin/vendor_perl/clang-scan-deps-19.1"
+      - "/usr/bin/core_perl/clang-scan-deps-19.1"
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang-scan-deps-19"
+      - "/home/minipops/.local/share/nvim/mason/bin/clang-scan-deps-19"
+      - "/opt/esp-idf/components/espcoredump/clang-scan-deps-19"
+      - "/opt/esp-idf/components/partition_table/clang-scan-deps-19"
+      - "/opt/esp-idf/components/app_update/clang-scan-deps-19"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/clang-scan-deps-19"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/clang-scan-deps-19"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/clang-scan-deps-19"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/clang-scan-deps-19"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/clang-scan-deps-19"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/clang-scan-deps-19"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/clang-scan-deps-19"
+      - "/opt/esp-idf/tools/clang-scan-deps-19"
+      - "/home/minipops/work/kattis-cli/clang-scan-deps-19"
+      - "/home/minipops/bin/clang-scan-deps-19"
+      - "/home/minipops/.local/bin/clang-scan-deps-19"
+      - "/usr/local/bin/clang-scan-deps-19"
+      - "/usr/local/sbin/clang-scan-deps-19"
+      - "/usr/bin/clang-scan-deps-19"
+      - "/usr/lib/jvm/default/bin/clang-scan-deps-19"
+      - "/usr/bin/site_perl/clang-scan-deps-19"
+      - "/usr/bin/vendor_perl/clang-scan-deps-19"
+      - "/usr/bin/core_perl/clang-scan-deps-19"
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang-scan-deps19"
+      - "/home/minipops/.local/share/nvim/mason/bin/clang-scan-deps19"
+      - "/opt/esp-idf/components/espcoredump/clang-scan-deps19"
+      - "/opt/esp-idf/components/partition_table/clang-scan-deps19"
+      - "/opt/esp-idf/components/app_update/clang-scan-deps19"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/clang-scan-deps19"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/clang-scan-deps19"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/clang-scan-deps19"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/clang-scan-deps19"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/clang-scan-deps19"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/clang-scan-deps19"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/clang-scan-deps19"
+      - "/opt/esp-idf/tools/clang-scan-deps19"
+      - "/home/minipops/work/kattis-cli/clang-scan-deps19"
+      - "/home/minipops/bin/clang-scan-deps19"
+      - "/home/minipops/.local/bin/clang-scan-deps19"
+      - "/usr/local/bin/clang-scan-deps19"
+      - "/usr/local/sbin/clang-scan-deps19"
+      - "/usr/bin/clang-scan-deps19"
+      - "/usr/lib/jvm/default/bin/clang-scan-deps19"
+      - "/usr/bin/site_perl/clang-scan-deps19"
+      - "/usr/bin/vendor_perl/clang-scan-deps19"
+      - "/usr/bin/core_perl/clang-scan-deps19"
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang-scan-deps"
+      - "/home/minipops/.local/share/nvim/mason/bin/clang-scan-deps"
+      - "/opt/esp-idf/components/espcoredump/clang-scan-deps"
+      - "/opt/esp-idf/components/partition_table/clang-scan-deps"
+      - "/opt/esp-idf/components/app_update/clang-scan-deps"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/clang-scan-deps"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/clang-scan-deps"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/clang-scan-deps"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/clang-scan-deps"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/clang-scan-deps"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/clang-scan-deps"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/clang-scan-deps"
+      - "/opt/esp-idf/tools/clang-scan-deps"
+      - "/home/minipops/work/kattis-cli/clang-scan-deps"
+      - "/home/minipops/bin/clang-scan-deps"
+      - "/home/minipops/.local/bin/clang-scan-deps"
+      - "/usr/local/bin/clang-scan-deps"
+      - "/usr/local/sbin/clang-scan-deps"
+    found: "/usr/bin/clang-scan-deps"
+    search_context:
+      ENV{PATH}:
+        - "/home/minipops/.local/share/nvim/mason/bin"
+        - "/opt/esp-idf/components/espcoredump"
+        - "/opt/esp-idf/components/partition_table"
+        - "/opt/esp-idf/components/app_update"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
+        - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
+        - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin"
+        - "/opt/esp-idf/tools"
+        - "/home/minipops/work/kattis-cli"
+        - "/home/minipops/bin"
+        - "/home/minipops/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompiler.cmake:115 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:71 (_cmake_find_compiler_path)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "clang++"
+    candidate_directories:
+      - "/home/minipops/.local/share/nvim/mason/bin/"
+      - "/opt/esp-idf/components/espcoredump/"
+      - "/opt/esp-idf/components/partition_table/"
+      - "/opt/esp-idf/components/app_update/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/"
+      - "/opt/esp-idf/tools/"
+      - "/home/minipops/work/kattis-cli/"
+      - "/home/minipops/bin/"
+      - "/home/minipops/.local/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/minipops/.local/share/nvim/mason/bin/clang++"
+      - "/opt/esp-idf/components/espcoredump/clang++"
+      - "/opt/esp-idf/components/partition_table/clang++"
+      - "/opt/esp-idf/components/app_update/clang++"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/clang++"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/clang++"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/clang++"
+    found: "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang++"
+    search_context:
+      ENV{PATH}:
+        - "/home/minipops/.local/share/nvim/mason/bin"
+        - "/opt/esp-idf/components/espcoredump"
+        - "/opt/esp-idf/components/partition_table"
+        - "/opt/esp-idf/components/app_update"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
+        - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
+        - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin"
+        - "/opt/esp-idf/tools"
+        - "/home/minipops/work/kattis-cli"
+        - "/home/minipops/bin"
+        - "/home/minipops/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/usr/share/cmake/Modules/"
+      - "/opt/esp-idf/tools/cmake/"
+      - "/opt/esp-idf/tools/cmake/third_party/"
+    found: "/usr/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "/home/minipops/.local/share/nvim/mason/bin"
+        - "/opt/esp-idf/components/espcoredump"
+        - "/opt/esp-idf/components/partition_table"
+        - "/opt/esp-idf/components/app_update"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
+        - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
+        - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin"
+        - "/opt/esp-idf/tools"
+        - "/home/minipops/work/kattis-cli"
+        - "/home/minipops/bin"
+        - "/home/minipops/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang++ 
+      Build flags: --target=xtensa-esp-elf;-mcpu=esp32
+      Id flags:  
+      
+      The output was:
+      1
+      /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/ld.lld: error while loading shared libraries: libxml2.so.2: cannot open shared object file: No such file or directory
+      clang++: error: unable to execute command: No such file or directory
+      clang++: error: ld command failed due to signal (use -v to see invocation)
+      
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/usr/share/cmake/Modules/"
+      - "/opt/esp-idf/tools/cmake/"
+      - "/opt/esp-idf/tools/cmake/third_party/"
+    found: "/usr/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "/home/minipops/.local/share/nvim/mason/bin"
+        - "/opt/esp-idf/components/espcoredump"
+        - "/opt/esp-idf/components/partition_table"
+        - "/opt/esp-idf/components/app_update"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
+        - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
+        - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin"
+        - "/opt/esp-idf/tools"
+        - "/home/minipops/work/kattis-cli"
+        - "/home/minipops/bin"
+        - "/home/minipops/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang++ 
+      Build flags: --target=xtensa-esp-elf;-mcpu=esp32
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is Clang, found in:
+        /home/minipops/uni/da383a/heart32/build.clang/CMakeFiles/4.2.3/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Compiler/Clang-FindBinUtils.cmake:26 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_AR"
+    description: "LLVM archiver"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-ar-19.1"
+      - "llvm-ar-19"
+      - "llvm-ar19"
+      - "llvm-ar"
+    candidate_directories:
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/"
+      - "/home/minipops/.local/share/nvim/mason/bin/"
+      - "/opt/esp-idf/components/espcoredump/"
+      - "/opt/esp-idf/components/partition_table/"
+      - "/opt/esp-idf/components/app_update/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/"
+      - "/opt/esp-idf/tools/"
+      - "/home/minipops/work/kattis-cli/"
+      - "/home/minipops/bin/"
+      - "/home/minipops/.local/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/llvm-ar-19.1"
+      - "/home/minipops/.local/share/nvim/mason/bin/llvm-ar-19.1"
+      - "/opt/esp-idf/components/espcoredump/llvm-ar-19.1"
+      - "/opt/esp-idf/components/partition_table/llvm-ar-19.1"
+      - "/opt/esp-idf/components/app_update/llvm-ar-19.1"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/llvm-ar-19.1"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/llvm-ar-19.1"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/llvm-ar-19.1"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/llvm-ar-19.1"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/llvm-ar-19.1"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/llvm-ar-19.1"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/llvm-ar-19.1"
+      - "/opt/esp-idf/tools/llvm-ar-19.1"
+      - "/home/minipops/work/kattis-cli/llvm-ar-19.1"
+      - "/home/minipops/bin/llvm-ar-19.1"
+      - "/home/minipops/.local/bin/llvm-ar-19.1"
+      - "/usr/local/bin/llvm-ar-19.1"
+      - "/usr/local/sbin/llvm-ar-19.1"
+      - "/usr/bin/llvm-ar-19.1"
+      - "/usr/lib/jvm/default/bin/llvm-ar-19.1"
+      - "/usr/bin/site_perl/llvm-ar-19.1"
+      - "/usr/bin/vendor_perl/llvm-ar-19.1"
+      - "/usr/bin/core_perl/llvm-ar-19.1"
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/llvm-ar-19"
+      - "/home/minipops/.local/share/nvim/mason/bin/llvm-ar-19"
+      - "/opt/esp-idf/components/espcoredump/llvm-ar-19"
+      - "/opt/esp-idf/components/partition_table/llvm-ar-19"
+      - "/opt/esp-idf/components/app_update/llvm-ar-19"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/llvm-ar-19"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/llvm-ar-19"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/llvm-ar-19"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/llvm-ar-19"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/llvm-ar-19"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/llvm-ar-19"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/llvm-ar-19"
+      - "/opt/esp-idf/tools/llvm-ar-19"
+      - "/home/minipops/work/kattis-cli/llvm-ar-19"
+      - "/home/minipops/bin/llvm-ar-19"
+      - "/home/minipops/.local/bin/llvm-ar-19"
+      - "/usr/local/bin/llvm-ar-19"
+      - "/usr/local/sbin/llvm-ar-19"
+      - "/usr/bin/llvm-ar-19"
+      - "/usr/lib/jvm/default/bin/llvm-ar-19"
+      - "/usr/bin/site_perl/llvm-ar-19"
+      - "/usr/bin/vendor_perl/llvm-ar-19"
+      - "/usr/bin/core_perl/llvm-ar-19"
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/llvm-ar19"
+      - "/home/minipops/.local/share/nvim/mason/bin/llvm-ar19"
+      - "/opt/esp-idf/components/espcoredump/llvm-ar19"
+      - "/opt/esp-idf/components/partition_table/llvm-ar19"
+      - "/opt/esp-idf/components/app_update/llvm-ar19"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/llvm-ar19"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/llvm-ar19"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/llvm-ar19"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/llvm-ar19"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/llvm-ar19"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/llvm-ar19"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/llvm-ar19"
+      - "/opt/esp-idf/tools/llvm-ar19"
+      - "/home/minipops/work/kattis-cli/llvm-ar19"
+      - "/home/minipops/bin/llvm-ar19"
+      - "/home/minipops/.local/bin/llvm-ar19"
+      - "/usr/local/bin/llvm-ar19"
+      - "/usr/local/sbin/llvm-ar19"
+      - "/usr/bin/llvm-ar19"
+      - "/usr/lib/jvm/default/bin/llvm-ar19"
+      - "/usr/bin/site_perl/llvm-ar19"
+      - "/usr/bin/vendor_perl/llvm-ar19"
+      - "/usr/bin/core_perl/llvm-ar19"
+    found: "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/llvm-ar"
+    search_context:
+      ENV{PATH}:
+        - "/home/minipops/.local/share/nvim/mason/bin"
+        - "/opt/esp-idf/components/espcoredump"
+        - "/opt/esp-idf/components/partition_table"
+        - "/opt/esp-idf/components/app_update"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
+        - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
+        - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin"
+        - "/opt/esp-idf/tools"
+        - "/home/minipops/work/kattis-cli"
+        - "/home/minipops/bin"
+        - "/home/minipops/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Compiler/Clang-FindBinUtils.cmake:38 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_RANLIB"
+    description: "Generate index for LLVM archive"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-ranlib-19.1"
+      - "llvm-ranlib-19"
+      - "llvm-ranlib19"
+      - "llvm-ranlib"
+    candidate_directories:
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/"
+      - "/home/minipops/.local/share/nvim/mason/bin/"
+      - "/opt/esp-idf/components/espcoredump/"
+      - "/opt/esp-idf/components/partition_table/"
+      - "/opt/esp-idf/components/app_update/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/"
+      - "/opt/esp-idf/tools/"
+      - "/home/minipops/work/kattis-cli/"
+      - "/home/minipops/bin/"
+      - "/home/minipops/.local/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/llvm-ranlib-19.1"
+      - "/home/minipops/.local/share/nvim/mason/bin/llvm-ranlib-19.1"
+      - "/opt/esp-idf/components/espcoredump/llvm-ranlib-19.1"
+      - "/opt/esp-idf/components/partition_table/llvm-ranlib-19.1"
+      - "/opt/esp-idf/components/app_update/llvm-ranlib-19.1"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/llvm-ranlib-19.1"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/llvm-ranlib-19.1"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/llvm-ranlib-19.1"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/llvm-ranlib-19.1"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/llvm-ranlib-19.1"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/llvm-ranlib-19.1"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/llvm-ranlib-19.1"
+      - "/opt/esp-idf/tools/llvm-ranlib-19.1"
+      - "/home/minipops/work/kattis-cli/llvm-ranlib-19.1"
+      - "/home/minipops/bin/llvm-ranlib-19.1"
+      - "/home/minipops/.local/bin/llvm-ranlib-19.1"
+      - "/usr/local/bin/llvm-ranlib-19.1"
+      - "/usr/local/sbin/llvm-ranlib-19.1"
+      - "/usr/bin/llvm-ranlib-19.1"
+      - "/usr/lib/jvm/default/bin/llvm-ranlib-19.1"
+      - "/usr/bin/site_perl/llvm-ranlib-19.1"
+      - "/usr/bin/vendor_perl/llvm-ranlib-19.1"
+      - "/usr/bin/core_perl/llvm-ranlib-19.1"
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/llvm-ranlib-19"
+      - "/home/minipops/.local/share/nvim/mason/bin/llvm-ranlib-19"
+      - "/opt/esp-idf/components/espcoredump/llvm-ranlib-19"
+      - "/opt/esp-idf/components/partition_table/llvm-ranlib-19"
+      - "/opt/esp-idf/components/app_update/llvm-ranlib-19"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/llvm-ranlib-19"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/llvm-ranlib-19"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/llvm-ranlib-19"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/llvm-ranlib-19"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/llvm-ranlib-19"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/llvm-ranlib-19"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/llvm-ranlib-19"
+      - "/opt/esp-idf/tools/llvm-ranlib-19"
+      - "/home/minipops/work/kattis-cli/llvm-ranlib-19"
+      - "/home/minipops/bin/llvm-ranlib-19"
+      - "/home/minipops/.local/bin/llvm-ranlib-19"
+      - "/usr/local/bin/llvm-ranlib-19"
+      - "/usr/local/sbin/llvm-ranlib-19"
+      - "/usr/bin/llvm-ranlib-19"
+      - "/usr/lib/jvm/default/bin/llvm-ranlib-19"
+      - "/usr/bin/site_perl/llvm-ranlib-19"
+      - "/usr/bin/vendor_perl/llvm-ranlib-19"
+      - "/usr/bin/core_perl/llvm-ranlib-19"
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/llvm-ranlib19"
+      - "/home/minipops/.local/share/nvim/mason/bin/llvm-ranlib19"
+      - "/opt/esp-idf/components/espcoredump/llvm-ranlib19"
+      - "/opt/esp-idf/components/partition_table/llvm-ranlib19"
+      - "/opt/esp-idf/components/app_update/llvm-ranlib19"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/llvm-ranlib19"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/llvm-ranlib19"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/llvm-ranlib19"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/llvm-ranlib19"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/llvm-ranlib19"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/llvm-ranlib19"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/llvm-ranlib19"
+      - "/opt/esp-idf/tools/llvm-ranlib19"
+      - "/home/minipops/work/kattis-cli/llvm-ranlib19"
+      - "/home/minipops/bin/llvm-ranlib19"
+      - "/home/minipops/.local/bin/llvm-ranlib19"
+      - "/usr/local/bin/llvm-ranlib19"
+      - "/usr/local/sbin/llvm-ranlib19"
+      - "/usr/bin/llvm-ranlib19"
+      - "/usr/lib/jvm/default/bin/llvm-ranlib19"
+      - "/usr/bin/site_perl/llvm-ranlib19"
+      - "/usr/bin/vendor_perl/llvm-ranlib19"
+      - "/usr/bin/core_perl/llvm-ranlib19"
+    found: "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/llvm-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/home/minipops/.local/share/nvim/mason/bin"
+        - "/opt/esp-idf/components/espcoredump"
+        - "/opt/esp-idf/components/partition_table"
+        - "/opt/esp-idf/components/app_update"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
+        - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
+        - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin"
+        - "/opt/esp-idf/tools"
+        - "/home/minipops/work/kattis-cli"
+        - "/home/minipops/bin"
+        - "/home/minipops/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Compiler/Clang-FindBinUtils.cmake:50 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS"
+    description: "`clang-scan-deps` dependency scanner"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "clang-scan-deps-19.1"
+      - "clang-scan-deps-19"
+      - "clang-scan-deps19"
+      - "clang-scan-deps"
+    candidate_directories:
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/"
+      - "/home/minipops/.local/share/nvim/mason/bin/"
+      - "/opt/esp-idf/components/espcoredump/"
+      - "/opt/esp-idf/components/partition_table/"
+      - "/opt/esp-idf/components/app_update/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/"
+      - "/opt/esp-idf/tools/"
+      - "/home/minipops/work/kattis-cli/"
+      - "/home/minipops/bin/"
+      - "/home/minipops/.local/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang-scan-deps-19.1"
+      - "/home/minipops/.local/share/nvim/mason/bin/clang-scan-deps-19.1"
+      - "/opt/esp-idf/components/espcoredump/clang-scan-deps-19.1"
+      - "/opt/esp-idf/components/partition_table/clang-scan-deps-19.1"
+      - "/opt/esp-idf/components/app_update/clang-scan-deps-19.1"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/clang-scan-deps-19.1"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/clang-scan-deps-19.1"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/clang-scan-deps-19.1"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/clang-scan-deps-19.1"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/clang-scan-deps-19.1"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/clang-scan-deps-19.1"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/clang-scan-deps-19.1"
+      - "/opt/esp-idf/tools/clang-scan-deps-19.1"
+      - "/home/minipops/work/kattis-cli/clang-scan-deps-19.1"
+      - "/home/minipops/bin/clang-scan-deps-19.1"
+      - "/home/minipops/.local/bin/clang-scan-deps-19.1"
+      - "/usr/local/bin/clang-scan-deps-19.1"
+      - "/usr/local/sbin/clang-scan-deps-19.1"
+      - "/usr/bin/clang-scan-deps-19.1"
+      - "/usr/lib/jvm/default/bin/clang-scan-deps-19.1"
+      - "/usr/bin/site_perl/clang-scan-deps-19.1"
+      - "/usr/bin/vendor_perl/clang-scan-deps-19.1"
+      - "/usr/bin/core_perl/clang-scan-deps-19.1"
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang-scan-deps-19"
+      - "/home/minipops/.local/share/nvim/mason/bin/clang-scan-deps-19"
+      - "/opt/esp-idf/components/espcoredump/clang-scan-deps-19"
+      - "/opt/esp-idf/components/partition_table/clang-scan-deps-19"
+      - "/opt/esp-idf/components/app_update/clang-scan-deps-19"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/clang-scan-deps-19"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/clang-scan-deps-19"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/clang-scan-deps-19"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/clang-scan-deps-19"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/clang-scan-deps-19"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/clang-scan-deps-19"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/clang-scan-deps-19"
+      - "/opt/esp-idf/tools/clang-scan-deps-19"
+      - "/home/minipops/work/kattis-cli/clang-scan-deps-19"
+      - "/home/minipops/bin/clang-scan-deps-19"
+      - "/home/minipops/.local/bin/clang-scan-deps-19"
+      - "/usr/local/bin/clang-scan-deps-19"
+      - "/usr/local/sbin/clang-scan-deps-19"
+      - "/usr/bin/clang-scan-deps-19"
+      - "/usr/lib/jvm/default/bin/clang-scan-deps-19"
+      - "/usr/bin/site_perl/clang-scan-deps-19"
+      - "/usr/bin/vendor_perl/clang-scan-deps-19"
+      - "/usr/bin/core_perl/clang-scan-deps-19"
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang-scan-deps19"
+      - "/home/minipops/.local/share/nvim/mason/bin/clang-scan-deps19"
+      - "/opt/esp-idf/components/espcoredump/clang-scan-deps19"
+      - "/opt/esp-idf/components/partition_table/clang-scan-deps19"
+      - "/opt/esp-idf/components/app_update/clang-scan-deps19"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/clang-scan-deps19"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/clang-scan-deps19"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/clang-scan-deps19"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/clang-scan-deps19"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/clang-scan-deps19"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/clang-scan-deps19"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/clang-scan-deps19"
+      - "/opt/esp-idf/tools/clang-scan-deps19"
+      - "/home/minipops/work/kattis-cli/clang-scan-deps19"
+      - "/home/minipops/bin/clang-scan-deps19"
+      - "/home/minipops/.local/bin/clang-scan-deps19"
+      - "/usr/local/bin/clang-scan-deps19"
+      - "/usr/local/sbin/clang-scan-deps19"
+      - "/usr/bin/clang-scan-deps19"
+      - "/usr/lib/jvm/default/bin/clang-scan-deps19"
+      - "/usr/bin/site_perl/clang-scan-deps19"
+      - "/usr/bin/vendor_perl/clang-scan-deps19"
+      - "/usr/bin/core_perl/clang-scan-deps19"
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang-scan-deps"
+      - "/home/minipops/.local/share/nvim/mason/bin/clang-scan-deps"
+      - "/opt/esp-idf/components/espcoredump/clang-scan-deps"
+      - "/opt/esp-idf/components/partition_table/clang-scan-deps"
+      - "/opt/esp-idf/components/app_update/clang-scan-deps"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/clang-scan-deps"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/clang-scan-deps"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/clang-scan-deps"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/clang-scan-deps"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/clang-scan-deps"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/clang-scan-deps"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/clang-scan-deps"
+      - "/opt/esp-idf/tools/clang-scan-deps"
+      - "/home/minipops/work/kattis-cli/clang-scan-deps"
+      - "/home/minipops/bin/clang-scan-deps"
+      - "/home/minipops/.local/bin/clang-scan-deps"
+      - "/usr/local/bin/clang-scan-deps"
+      - "/usr/local/sbin/clang-scan-deps"
+    found: "/usr/bin/clang-scan-deps"
+    search_context:
+      ENV{PATH}:
+        - "/home/minipops/.local/share/nvim/mason/bin"
+        - "/opt/esp-idf/components/espcoredump"
+        - "/opt/esp-idf/components/partition_table"
+        - "/opt/esp-idf/components/app_update"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
+        - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
+        - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin"
+        - "/opt/esp-idf/tools"
+        - "/home/minipops/work/kattis-cli"
+        - "/home/minipops/bin"
+        - "/home/minipops/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompiler.cmake:115 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:64 (_cmake_find_compiler_path)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    mode: "program"
+    variable: "CMAKE_ASM_COMPILER_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "clang"
+    candidate_directories:
+      - "/home/minipops/.local/share/nvim/mason/bin/"
+      - "/opt/esp-idf/components/espcoredump/"
+      - "/opt/esp-idf/components/partition_table/"
+      - "/opt/esp-idf/components/app_update/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/"
+      - "/opt/esp-idf/tools/"
+      - "/home/minipops/work/kattis-cli/"
+      - "/home/minipops/bin/"
+      - "/home/minipops/.local/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/minipops/.local/share/nvim/mason/bin/clang"
+      - "/opt/esp-idf/components/espcoredump/clang"
+      - "/opt/esp-idf/components/partition_table/clang"
+      - "/opt/esp-idf/components/app_update/clang"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/clang"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/clang"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/clang"
+    found: "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang"
+    search_context:
+      ENV{PATH}:
+        - "/home/minipops/.local/share/nvim/mason/bin"
+        - "/opt/esp-idf/components/espcoredump"
+        - "/opt/esp-idf/components/partition_table"
+        - "/opt/esp-idf/components/app_update"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
+        - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
+        - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin"
+        - "/opt/esp-idf/tools"
+        - "/home/minipops/work/kattis-cli"
+        - "/home/minipops/bin"
+        - "/home/minipops/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      Espressif clang version 19.1.2 (https://github.com/espressif/llvm-project.git esp-19.1.2_20250312)
+      Target: riscv32-esp-unknown-elf
+      Thread model: posix
+      InstalledDir: /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Checking whether the ASM compiler is AppleClang using "--version" did not match "(Apple (clang|LLVM) version)":
+      Espressif clang version 19.1.2 (https://github.com/espressif/llvm-project.git esp-19.1.2_20250312)
+      Target: riscv32-esp-unknown-elf
+      Thread model: posix
+      InstalledDir: /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1290 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Checking whether the ASM compiler is Clang using "--version" matched "(clang version)":
+      Espressif clang version 19.1.2 (https://github.com/espressif/llvm-project.git esp-19.1.2_20250312)
+      Target: riscv32-esp-unknown-elf
+      Thread model: posix
+      InstalledDir: /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Compiler/Clang-FindBinUtils.cmake:26 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:268 (include)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    mode: "program"
+    variable: "CMAKE_ASM_COMPILER_AR"
+    description: "LLVM archiver"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-ar-"
+      - "llvm-ar-"
+      - "llvm-ar"
+      - "llvm-ar"
+    candidate_directories:
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/"
+      - "/home/minipops/.local/share/nvim/mason/bin/"
+      - "/opt/esp-idf/components/espcoredump/"
+      - "/opt/esp-idf/components/partition_table/"
+      - "/opt/esp-idf/components/app_update/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/"
+      - "/opt/esp-idf/tools/"
+      - "/home/minipops/work/kattis-cli/"
+      - "/home/minipops/bin/"
+      - "/home/minipops/.local/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/llvm-ar-"
+      - "/home/minipops/.local/share/nvim/mason/bin/llvm-ar-"
+      - "/opt/esp-idf/components/espcoredump/llvm-ar-"
+      - "/opt/esp-idf/components/partition_table/llvm-ar-"
+      - "/opt/esp-idf/components/app_update/llvm-ar-"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/llvm-ar-"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/llvm-ar-"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/llvm-ar-"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/llvm-ar-"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/llvm-ar-"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/llvm-ar-"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/llvm-ar-"
+      - "/opt/esp-idf/tools/llvm-ar-"
+      - "/home/minipops/work/kattis-cli/llvm-ar-"
+      - "/home/minipops/bin/llvm-ar-"
+      - "/home/minipops/.local/bin/llvm-ar-"
+      - "/usr/local/bin/llvm-ar-"
+      - "/usr/local/sbin/llvm-ar-"
+      - "/usr/bin/llvm-ar-"
+      - "/usr/lib/jvm/default/bin/llvm-ar-"
+      - "/usr/bin/site_perl/llvm-ar-"
+      - "/usr/bin/vendor_perl/llvm-ar-"
+      - "/usr/bin/core_perl/llvm-ar-"
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/llvm-ar-"
+      - "/home/minipops/.local/share/nvim/mason/bin/llvm-ar-"
+      - "/opt/esp-idf/components/espcoredump/llvm-ar-"
+      - "/opt/esp-idf/components/partition_table/llvm-ar-"
+      - "/opt/esp-idf/components/app_update/llvm-ar-"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/llvm-ar-"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/llvm-ar-"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/llvm-ar-"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/llvm-ar-"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/llvm-ar-"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/llvm-ar-"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/llvm-ar-"
+      - "/opt/esp-idf/tools/llvm-ar-"
+      - "/home/minipops/work/kattis-cli/llvm-ar-"
+      - "/home/minipops/bin/llvm-ar-"
+      - "/home/minipops/.local/bin/llvm-ar-"
+      - "/usr/local/bin/llvm-ar-"
+      - "/usr/local/sbin/llvm-ar-"
+      - "/usr/bin/llvm-ar-"
+      - "/usr/lib/jvm/default/bin/llvm-ar-"
+      - "/usr/bin/site_perl/llvm-ar-"
+      - "/usr/bin/vendor_perl/llvm-ar-"
+      - "/usr/bin/core_perl/llvm-ar-"
+    found: "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/llvm-ar"
+    search_context:
+      ENV{PATH}:
+        - "/home/minipops/.local/share/nvim/mason/bin"
+        - "/opt/esp-idf/components/espcoredump"
+        - "/opt/esp-idf/components/partition_table"
+        - "/opt/esp-idf/components/app_update"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
+        - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
+        - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin"
+        - "/opt/esp-idf/tools"
+        - "/home/minipops/work/kattis-cli"
+        - "/home/minipops/bin"
+        - "/home/minipops/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Compiler/Clang-FindBinUtils.cmake:38 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:268 (include)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    mode: "program"
+    variable: "CMAKE_ASM_COMPILER_RANLIB"
+    description: "Generate index for LLVM archive"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-ranlib-"
+      - "llvm-ranlib-"
+      - "llvm-ranlib"
+      - "llvm-ranlib"
+    candidate_directories:
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/"
+      - "/home/minipops/.local/share/nvim/mason/bin/"
+      - "/opt/esp-idf/components/espcoredump/"
+      - "/opt/esp-idf/components/partition_table/"
+      - "/opt/esp-idf/components/app_update/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/"
+      - "/opt/esp-idf/tools/"
+      - "/home/minipops/work/kattis-cli/"
+      - "/home/minipops/bin/"
+      - "/home/minipops/.local/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/llvm-ranlib-"
+      - "/home/minipops/.local/share/nvim/mason/bin/llvm-ranlib-"
+      - "/opt/esp-idf/components/espcoredump/llvm-ranlib-"
+      - "/opt/esp-idf/components/partition_table/llvm-ranlib-"
+      - "/opt/esp-idf/components/app_update/llvm-ranlib-"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/llvm-ranlib-"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/llvm-ranlib-"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/llvm-ranlib-"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/llvm-ranlib-"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/llvm-ranlib-"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/llvm-ranlib-"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/llvm-ranlib-"
+      - "/opt/esp-idf/tools/llvm-ranlib-"
+      - "/home/minipops/work/kattis-cli/llvm-ranlib-"
+      - "/home/minipops/bin/llvm-ranlib-"
+      - "/home/minipops/.local/bin/llvm-ranlib-"
+      - "/usr/local/bin/llvm-ranlib-"
+      - "/usr/local/sbin/llvm-ranlib-"
+      - "/usr/bin/llvm-ranlib-"
+      - "/usr/lib/jvm/default/bin/llvm-ranlib-"
+      - "/usr/bin/site_perl/llvm-ranlib-"
+      - "/usr/bin/vendor_perl/llvm-ranlib-"
+      - "/usr/bin/core_perl/llvm-ranlib-"
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/llvm-ranlib-"
+      - "/home/minipops/.local/share/nvim/mason/bin/llvm-ranlib-"
+      - "/opt/esp-idf/components/espcoredump/llvm-ranlib-"
+      - "/opt/esp-idf/components/partition_table/llvm-ranlib-"
+      - "/opt/esp-idf/components/app_update/llvm-ranlib-"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/llvm-ranlib-"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/llvm-ranlib-"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/llvm-ranlib-"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/llvm-ranlib-"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/llvm-ranlib-"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/llvm-ranlib-"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/llvm-ranlib-"
+      - "/opt/esp-idf/tools/llvm-ranlib-"
+      - "/home/minipops/work/kattis-cli/llvm-ranlib-"
+      - "/home/minipops/bin/llvm-ranlib-"
+      - "/home/minipops/.local/bin/llvm-ranlib-"
+      - "/usr/local/bin/llvm-ranlib-"
+      - "/usr/local/sbin/llvm-ranlib-"
+      - "/usr/bin/llvm-ranlib-"
+      - "/usr/lib/jvm/default/bin/llvm-ranlib-"
+      - "/usr/bin/site_perl/llvm-ranlib-"
+      - "/usr/bin/vendor_perl/llvm-ranlib-"
+      - "/usr/bin/core_perl/llvm-ranlib-"
+    found: "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/llvm-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/home/minipops/.local/share/nvim/mason/bin"
+        - "/opt/esp-idf/components/espcoredump"
+        - "/opt/esp-idf/components/partition_table"
+        - "/opt/esp-idf/components/app_update"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
+        - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
+        - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin"
+        - "/opt/esp-idf/tools"
+        - "/home/minipops/work/kattis-cli"
+        - "/home/minipops/bin"
+        - "/home/minipops/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Compiler/Clang-FindBinUtils.cmake:50 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:268 (include)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    mode: "program"
+    variable: "CMAKE_ASM_COMPILER_CLANG_SCAN_DEPS"
+    description: "`clang-scan-deps` dependency scanner"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "clang-scan-deps-"
+      - "clang-scan-deps-"
+      - "clang-scan-deps"
+      - "clang-scan-deps"
+    candidate_directories:
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/"
+      - "/home/minipops/.local/share/nvim/mason/bin/"
+      - "/opt/esp-idf/components/espcoredump/"
+      - "/opt/esp-idf/components/partition_table/"
+      - "/opt/esp-idf/components/app_update/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/"
+      - "/opt/esp-idf/tools/"
+      - "/home/minipops/work/kattis-cli/"
+      - "/home/minipops/bin/"
+      - "/home/minipops/.local/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang-scan-deps-"
+      - "/home/minipops/.local/share/nvim/mason/bin/clang-scan-deps-"
+      - "/opt/esp-idf/components/espcoredump/clang-scan-deps-"
+      - "/opt/esp-idf/components/partition_table/clang-scan-deps-"
+      - "/opt/esp-idf/components/app_update/clang-scan-deps-"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/clang-scan-deps-"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/clang-scan-deps-"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/clang-scan-deps-"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/clang-scan-deps-"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/clang-scan-deps-"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/clang-scan-deps-"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/clang-scan-deps-"
+      - "/opt/esp-idf/tools/clang-scan-deps-"
+      - "/home/minipops/work/kattis-cli/clang-scan-deps-"
+      - "/home/minipops/bin/clang-scan-deps-"
+      - "/home/minipops/.local/bin/clang-scan-deps-"
+      - "/usr/local/bin/clang-scan-deps-"
+      - "/usr/local/sbin/clang-scan-deps-"
+      - "/usr/bin/clang-scan-deps-"
+      - "/usr/lib/jvm/default/bin/clang-scan-deps-"
+      - "/usr/bin/site_perl/clang-scan-deps-"
+      - "/usr/bin/vendor_perl/clang-scan-deps-"
+      - "/usr/bin/core_perl/clang-scan-deps-"
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang-scan-deps-"
+      - "/home/minipops/.local/share/nvim/mason/bin/clang-scan-deps-"
+      - "/opt/esp-idf/components/espcoredump/clang-scan-deps-"
+      - "/opt/esp-idf/components/partition_table/clang-scan-deps-"
+      - "/opt/esp-idf/components/app_update/clang-scan-deps-"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/clang-scan-deps-"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/clang-scan-deps-"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/clang-scan-deps-"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/clang-scan-deps-"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/clang-scan-deps-"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/clang-scan-deps-"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/clang-scan-deps-"
+      - "/opt/esp-idf/tools/clang-scan-deps-"
+      - "/home/minipops/work/kattis-cli/clang-scan-deps-"
+      - "/home/minipops/bin/clang-scan-deps-"
+      - "/home/minipops/.local/bin/clang-scan-deps-"
+      - "/usr/local/bin/clang-scan-deps-"
+      - "/usr/local/sbin/clang-scan-deps-"
+      - "/usr/bin/clang-scan-deps-"
+      - "/usr/lib/jvm/default/bin/clang-scan-deps-"
+      - "/usr/bin/site_perl/clang-scan-deps-"
+      - "/usr/bin/vendor_perl/clang-scan-deps-"
+      - "/usr/bin/core_perl/clang-scan-deps-"
+      - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang-scan-deps"
+      - "/home/minipops/.local/share/nvim/mason/bin/clang-scan-deps"
+      - "/opt/esp-idf/components/espcoredump/clang-scan-deps"
+      - "/opt/esp-idf/components/partition_table/clang-scan-deps"
+      - "/opt/esp-idf/components/app_update/clang-scan-deps"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/clang-scan-deps"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin/clang-scan-deps"
+      - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/clang-scan-deps"
+      - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin/clang-scan-deps"
+      - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/clang-scan-deps"
+      - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin/clang-scan-deps"
+      - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/clang-scan-deps"
+      - "/opt/esp-idf/tools/clang-scan-deps"
+      - "/home/minipops/work/kattis-cli/clang-scan-deps"
+      - "/home/minipops/bin/clang-scan-deps"
+      - "/home/minipops/.local/bin/clang-scan-deps"
+      - "/usr/local/bin/clang-scan-deps"
+      - "/usr/local/sbin/clang-scan-deps"
+    found: "/usr/bin/clang-scan-deps"
+    search_context:
+      ENV{PATH}:
+        - "/home/minipops/.local/share/nvim/mason/bin"
+        - "/opt/esp-idf/components/espcoredump"
+        - "/opt/esp-idf/components/partition_table"
+        - "/opt/esp-idf/components/app_update"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
+        - "/home/minipops/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin"
+        - "/home/minipops/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin"
+        - "/home/minipops/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
+        - "/home/minipops/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin"
+        - "/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin"
+        - "/opt/esp-idf/tools"
+        - "/home/minipops/work/kattis-cli"
+        - "/home/minipops/bin"
+        - "/home/minipops/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/minipops/uni/da383a/heart32/build.clang/CMakeFiles/CMakeScratch/TryCompile-g2OsUj"
+      binary: "/home/minipops/uni/da383a/heart32/build.clang/CMakeFiles/CMakeScratch/TryCompile-g2OsUj"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: "--target=xtensa-esp-elf -mcpu=esp32 "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "--ld-path=xtensa-esp32-elf-clang-ld -z noexecstack "
+      CMAKE_MODULE_PATH: "/opt/esp-idf/tools/cmake;/opt/esp-idf/tools/cmake/third_party"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/minipops/uni/da383a/heart32/build.clang/CMakeFiles/CMakeScratch/TryCompile-g2OsUj'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_a3c13
+        [1/2] /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang   --target=xtensa-esp-elf -mcpu=esp32     -v -MD -MT CMakeFiles/cmTC_a3c13.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles/cmTC_a3c13.dir/CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_a3c13.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Espressif clang version 19.1.2 (https://github.com/espressif/llvm-project.git esp-19.1.2_20250312)
+        Target: xtensa-esp-unknown-elf
+        Thread model: posix
+        InstalledDir: /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin
+         (in-process)
+         "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang-19" -cc1 -triple xtensa-esp-unknown-elf -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -nostdsysteminc -target-cpu esp32 -target-feature +density -target-feature +fp -target-feature +windowed -target-feature +bool -target-feature +loop -target-feature +sext -target-feature +nsa -target-feature +clamps -target-feature +minmax -target-feature +mul32 -target-feature +mul32high -target-feature +div32 -target-feature +mac16 -target-feature +dfpaccel -target-feature +s32c1i -target-feature +threadptr -target-feature +atomctl -target-feature +memctl -target-feature +debug -target-feature +exception -target-feature +highpriinterrupts -target-feature +coprocessor -target-feature +interrupt -target-feature +rvector -target-feature +timerint -target-feature +prid -target-feature +regprotect -target-feature +miscsr -debugger-tuning=gdb -fdebug-compilation-dir=/home/minipops/uni/da383a/heart32/build.clang/CMakeFiles/CMakeScratch/TryCompile-g2OsUj -v -fcoverage-compilation-dir=/home/minipops/uni/da383a/heart32/build.clang/CMakeFiles/CMakeScratch/TryCompile-g2OsUj -resource-dir /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19 -dependency-file CMakeFiles/cmTC_a3c13.dir/CMakeCCompilerABI.c.obj.d -MT CMakeFiles/cmTC_a3c13.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include -internal-isystem /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -faddrsig -o CMakeFiles/cmTC_a3c13.dir/CMakeCCompilerABI.c.obj -x c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 19.1.2 based upon LLVM 19.1.2 default target riscv32-esp-elf
+        ignoring duplicate directory "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include
+         /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include
+        End of search list.
+        [2/2] : && /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang --target=xtensa-esp-elf -mcpu=esp32 --ld-path=xtensa-esp32-elf-clang-ld -z noexecstack  -v CMakeFiles/cmTC_a3c13.dir/CMakeCCompilerABI.c.obj -o cmTC_a3c13   && :
+        Espressif clang version 19.1.2 (https://github.com/espressif/llvm-project.git esp-19.1.2_20250312)
+        Target: xtensa-esp-unknown-elf
+        Thread model: posix
+        InstalledDir: /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin
+         "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/xtensa-esp32-elf-clang-ld" -o cmTC_a3c13 -X /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib/crt0.o -z noexecstack CMakeFiles/cmTC_a3c13.dir/CMakeCCompilerABI.c.obj -L/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib -lm --start-group -lc -lgloss -lnosys --end-group /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib/libclang_rt.builtins.a
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include]
+          add: [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include]
+        end of search list found
+        collapse include dir [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include] ==> [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include]
+        collapse include dir [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include] ==> [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include]
+        implicit include dirs: [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include;/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/minipops/uni/da383a/heart32/build.clang/CMakeFiles/CMakeScratch/TryCompile-g2OsUj']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_a3c13]
+        ignore line: [[1/2] /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang   --target=xtensa-esp-elf -mcpu=esp32     -v -MD -MT CMakeFiles/cmTC_a3c13.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles/cmTC_a3c13.dir/CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_a3c13.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Espressif clang version 19.1.2 (https://github.com/espressif/llvm-project.git esp-19.1.2_20250312)]
+        ignore line: [Target: xtensa-esp-unknown-elf]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin]
+        ignore line: [ (in-process)]
+        ignore line: [ "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang-19" -cc1 -triple xtensa-esp-unknown-elf -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -nostdsysteminc -target-cpu esp32 -target-feature +density -target-feature +fp -target-feature +windowed -target-feature +bool -target-feature +loop -target-feature +sext -target-feature +nsa -target-feature +clamps -target-feature +minmax -target-feature +mul32 -target-feature +mul32high -target-feature +div32 -target-feature +mac16 -target-feature +dfpaccel -target-feature +s32c1i -target-feature +threadptr -target-feature +atomctl -target-feature +memctl -target-feature +debug -target-feature +exception -target-feature +highpriinterrupts -target-feature +coprocessor -target-feature +interrupt -target-feature +rvector -target-feature +timerint -target-feature +prid -target-feature +regprotect -target-feature +miscsr -debugger-tuning=gdb -fdebug-compilation-dir=/home/minipops/uni/da383a/heart32/build.clang/CMakeFiles/CMakeScratch/TryCompile-g2OsUj -v -fcoverage-compilation-dir=/home/minipops/uni/da383a/heart32/build.clang/CMakeFiles/CMakeScratch/TryCompile-g2OsUj -resource-dir /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19 -dependency-file CMakeFiles/cmTC_a3c13.dir/CMakeCCompilerABI.c.obj.d -MT CMakeFiles/cmTC_a3c13.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include -internal-isystem /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -faddrsig -o CMakeFiles/cmTC_a3c13.dir/CMakeCCompilerABI.c.obj -x c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 19.1.2 based upon LLVM 19.1.2 default target riscv32-esp-elf]
+        ignore line: [ignoring duplicate directory "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include]
+        ignore line: [ /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include]
+        ignore line: [End of search list.]
+        ignore line: [[2/2] : && /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang --target=xtensa-esp-elf -mcpu=esp32 --ld-path=xtensa-esp32-elf-clang-ld -z noexecstack  -v CMakeFiles/cmTC_a3c13.dir/CMakeCCompilerABI.c.obj -o cmTC_a3c13   && :]
+        ignore line: [Espressif clang version 19.1.2 (https://github.com/espressif/llvm-project.git esp-19.1.2_20250312)]
+        ignore line: [Target: xtensa-esp-unknown-elf]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin]
+        link line: [ "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/xtensa-esp32-elf-clang-ld" -o cmTC_a3c13 -X /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib/crt0.o -z noexecstack CMakeFiles/cmTC_a3c13.dir/CMakeCCompilerABI.c.obj -L/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib -lm --start-group -lc -lgloss -lnosys --end-group /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib/libclang_rt.builtins.a]
+          arg [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/xtensa-esp32-elf-clang-ld] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_a3c13] ==> ignore
+          arg [-X] ==> ignore
+          arg [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib/crt0.o] ==> obj [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib/crt0.o]
+          arg [-znoexecstack] ==> ignore
+          arg [CMakeFiles/cmTC_a3c13.dir/CMakeCCompilerABI.c.obj] ==> ignore
+          arg [-L/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib] ==> dir [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib]
+          arg [-lm] ==> lib [m]
+          arg [--start-group] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgloss] ==> lib [gloss]
+          arg [-lnosys] ==> lib [nosys]
+          arg [--end-group] ==> ignore
+          arg [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib/libclang_rt.builtins.a] ==> lib [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib/libclang_rt.builtins.a]
+        ignore line: []
+        ignore line: []
+        remove lib [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib/libclang_rt.builtins.a]
+        collapse obj [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib/crt0.o] ==> [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib/crt0.o]
+        collapse library dir [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib] ==> [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib]
+        implicit libs: [m;c;gloss;nosys]
+        implicit objs: [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib/crt0.o]
+        implicit dirs: [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/minipops/uni/da383a/heart32/build.clang/CMakeFiles/CMakeScratch/TryCompile-nVDgMW"
+      binary: "/home/minipops/uni/da383a/heart32/build.clang/CMakeFiles/CMakeScratch/TryCompile-nVDgMW"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: "--target=xtensa-esp-elf -mcpu=esp32 "
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "--ld-path=xtensa-esp32-elf-clang-ld -z noexecstack "
+      CMAKE_MODULE_PATH: "/opt/esp-idf/tools/cmake;/opt/esp-idf/tools/cmake/third_party"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/minipops/uni/da383a/heart32/build.clang/CMakeFiles/CMakeScratch/TryCompile-nVDgMW'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_6f849
+        [1/2] /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang++   --target=xtensa-esp-elf -mcpu=esp32     -v -MD -MT CMakeFiles/cmTC_6f849.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles/cmTC_6f849.dir/CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_6f849.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Espressif clang version 19.1.2 (https://github.com/espressif/llvm-project.git esp-19.1.2_20250312)
+        Target: xtensa-esp-unknown-elf
+        Thread model: posix
+        InstalledDir: /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin
+         (in-process)
+         "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang-19" -cc1 -triple xtensa-esp-unknown-elf -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -nostdsysteminc -target-cpu esp32 -target-feature +density -target-feature +fp -target-feature +windowed -target-feature +bool -target-feature +loop -target-feature +sext -target-feature +nsa -target-feature +clamps -target-feature +minmax -target-feature +mul32 -target-feature +mul32high -target-feature +div32 -target-feature +mac16 -target-feature +dfpaccel -target-feature +s32c1i -target-feature +threadptr -target-feature +atomctl -target-feature +memctl -target-feature +debug -target-feature +exception -target-feature +highpriinterrupts -target-feature +coprocessor -target-feature +interrupt -target-feature +rvector -target-feature +timerint -target-feature +prid -target-feature +regprotect -target-feature +miscsr -debugger-tuning=gdb -fdebug-compilation-dir=/home/minipops/uni/da383a/heart32/build.clang/CMakeFiles/CMakeScratch/TryCompile-nVDgMW -v -fcoverage-compilation-dir=/home/minipops/uni/da383a/heart32/build.clang/CMakeFiles/CMakeScratch/TryCompile-nVDgMW -resource-dir /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19 -dependency-file CMakeFiles/cmTC_6f849.dir/CMakeCXXCompilerABI.cpp.obj.d -MT CMakeFiles/cmTC_6f849.dir/CMakeCXXCompilerABI.cpp.obj -sys-header-deps -internal-isystem /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/c++/14.2.0 -internal-isystem /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/include/c++/14.2.0 -internal-isystem /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include -internal-isystem /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include -fdeprecated-macro -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_6f849.dir/CMakeCXXCompilerABI.cpp.obj -x c++ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 19.1.2 based upon LLVM 19.1.2 default target riscv32-esp-elf
+        ignoring duplicate directory "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/c++/14.2.0
+         /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/include/c++/14.2.0
+         /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include
+         /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include
+        End of search list.
+        [2/2] : && /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang++ --target=xtensa-esp-elf -mcpu=esp32 --ld-path=xtensa-esp32-elf-clang-ld -z noexecstack  -v CMakeFiles/cmTC_6f849.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_6f849   && :
+        Espressif clang version 19.1.2 (https://github.com/espressif/llvm-project.git esp-19.1.2_20250312)
+        Target: xtensa-esp-unknown-elf
+        Thread model: posix
+        InstalledDir: /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin
+         "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/xtensa-esp32-elf-clang-ld" -o cmTC_6f849 -X /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib/crt0.o -z noexecstack CMakeFiles/cmTC_6f849.dir/CMakeCXXCompilerABI.cpp.obj -L/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib -lstdc++ -lm --start-group -lc -lgloss -lnosys --end-group /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib/libclang_rt.builtins.a
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/c++/14.2.0]
+          add: [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/include/c++/14.2.0]
+          add: [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include]
+          add: [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include]
+        end of search list found
+        collapse include dir [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/c++/14.2.0] ==> [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/c++/14.2.0]
+        collapse include dir [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/include/c++/14.2.0] ==> [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/include/c++/14.2.0]
+        collapse include dir [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include] ==> [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include]
+        collapse include dir [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include] ==> [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include]
+        implicit include dirs: [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/c++/14.2.0;/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/include/c++/14.2.0;/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include;/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/opt/esp-idf/tools/cmake/project.cmake:589 (__project)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/minipops/uni/da383a/heart32/build.clang/CMakeFiles/CMakeScratch/TryCompile-nVDgMW']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_6f849]
+        ignore line: [[1/2] /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang++   --target=xtensa-esp-elf -mcpu=esp32     -v -MD -MT CMakeFiles/cmTC_6f849.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles/cmTC_6f849.dir/CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_6f849.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Espressif clang version 19.1.2 (https://github.com/espressif/llvm-project.git esp-19.1.2_20250312)]
+        ignore line: [Target: xtensa-esp-unknown-elf]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin]
+        ignore line: [ (in-process)]
+        ignore line: [ "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang-19" -cc1 -triple xtensa-esp-unknown-elf -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -nostdsysteminc -target-cpu esp32 -target-feature +density -target-feature +fp -target-feature +windowed -target-feature +bool -target-feature +loop -target-feature +sext -target-feature +nsa -target-feature +clamps -target-feature +minmax -target-feature +mul32 -target-feature +mul32high -target-feature +div32 -target-feature +mac16 -target-feature +dfpaccel -target-feature +s32c1i -target-feature +threadptr -target-feature +atomctl -target-feature +memctl -target-feature +debug -target-feature +exception -target-feature +highpriinterrupts -target-feature +coprocessor -target-feature +interrupt -target-feature +rvector -target-feature +timerint -target-feature +prid -target-feature +regprotect -target-feature +miscsr -debugger-tuning=gdb -fdebug-compilation-dir=/home/minipops/uni/da383a/heart32/build.clang/CMakeFiles/CMakeScratch/TryCompile-nVDgMW -v -fcoverage-compilation-dir=/home/minipops/uni/da383a/heart32/build.clang/CMakeFiles/CMakeScratch/TryCompile-nVDgMW -resource-dir /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19 -dependency-file CMakeFiles/cmTC_6f849.dir/CMakeCXXCompilerABI.cpp.obj.d -MT CMakeFiles/cmTC_6f849.dir/CMakeCXXCompilerABI.cpp.obj -sys-header-deps -internal-isystem /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/c++/14.2.0 -internal-isystem /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/include/c++/14.2.0 -internal-isystem /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include -internal-isystem /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include -fdeprecated-macro -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_6f849.dir/CMakeCXXCompilerABI.cpp.obj -x c++ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 19.1.2 based upon LLVM 19.1.2 default target riscv32-esp-elf]
+        ignore line: [ignoring duplicate directory "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include/c++/14.2.0]
+        ignore line: [ /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/include/c++/14.2.0]
+        ignore line: [ /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang/19/include]
+        ignore line: [ /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/include]
+        ignore line: [End of search list.]
+        ignore line: [[2/2] : && /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang++ --target=xtensa-esp-elf -mcpu=esp32 --ld-path=xtensa-esp32-elf-clang-ld -z noexecstack  -v CMakeFiles/cmTC_6f849.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_6f849   && :]
+        ignore line: [Espressif clang version 19.1.2 (https://github.com/espressif/llvm-project.git esp-19.1.2_20250312)]
+        ignore line: [Target: xtensa-esp-unknown-elf]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin]
+        link line: [ "/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/xtensa-esp32-elf-clang-ld" -o cmTC_6f849 -X /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib/crt0.o -z noexecstack CMakeFiles/cmTC_6f849.dir/CMakeCXXCompilerABI.cpp.obj -L/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib -lstdc++ -lm --start-group -lc -lgloss -lnosys --end-group /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib/libclang_rt.builtins.a]
+          arg [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/xtensa-esp32-elf-clang-ld] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_6f849] ==> ignore
+          arg [-X] ==> ignore
+          arg [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib/crt0.o] ==> obj [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib/crt0.o]
+          arg [-znoexecstack] ==> ignore
+          arg [CMakeFiles/cmTC_6f849.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [-L/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib] ==> dir [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib]
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [--start-group] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgloss] ==> lib [gloss]
+          arg [-lnosys] ==> lib [nosys]
+          arg [--end-group] ==> ignore
+          arg [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib/libclang_rt.builtins.a] ==> lib [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib/libclang_rt.builtins.a]
+        ignore line: []
+        ignore line: []
+        remove lib [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib/libclang_rt.builtins.a]
+        collapse obj [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib/crt0.o] ==> [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib/crt0.o]
+        collapse library dir [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/../lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib] ==> [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib]
+        implicit libs: [stdc++;m;c;gloss;nosys]
+        implicit objs: [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib/crt0.o]
+        implicit dirs: [/home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/lib/clang-runtimes/xtensa-esp-unknown-elf/esp32/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:160 (check_c_source_compiles)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:226 (_threads_check_libc)"
+      - "/opt/esp-idf/components/mbedtls/mbedtls/CMakeLists.txt:139 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/minipops/uni/da383a/heart32/build.clang/CMakeFiles/CMakeScratch/TryCompile-gRD7Tq"
+      binary: "/home/minipops/uni/da383a/heart32/build.clang/CMakeFiles/CMakeScratch/TryCompile-gRD7Tq"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: "--target=xtensa-esp-elf -mcpu=esp32 "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "--ld-path=xtensa-esp32-elf-clang-ld -z noexecstack "
+      CMAKE_MODULE_PATH: "/opt/esp-idf/tools/cmake;/opt/esp-idf/tools/cmake/third_party"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/minipops/uni/da383a/heart32/build.clang/CMakeFiles/CMakeScratch/TryCompile-gRD7Tq'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_b3c71
+        [1/2] /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang -DCMAKE_HAVE_LIBC_PTHREAD  --target=xtensa-esp-elf -mcpu=esp32 -MD -MT CMakeFiles/cmTC_b3c71.dir/src.c.obj -MF CMakeFiles/cmTC_b3c71.dir/src.c.obj.d -o CMakeFiles/cmTC_b3c71.dir/src.c.obj -c /home/minipops/uni/da383a/heart32/build.clang/CMakeFiles/CMakeScratch/TryCompile-gRD7Tq/src.c
+        [2/2] : && /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clang --target=xtensa-esp-elf -mcpu=esp32 --ld-path=xtensa-esp32-elf-clang-ld -z noexecstack CMakeFiles/cmTC_b3c71.dir/src.c.obj -o cmTC_b3c71   && :
+        /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/xtensa-esp32-elf-clang-ld: CMakeFiles/cmTC_b3c71.dir/src.c.obj:(.literal+0x14): warning: pthread_atfork is not implemented and will always fail
+        /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/xtensa-esp32-elf-clang-ld: CMakeFiles/cmTC_b3c71.dir/src.c.obj:(.literal+0xc): warning: pthread_cancel is not implemented and will always fail
+        /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/xtensa-esp32-elf-clang-ld: CMakeFiles/cmTC_b3c71.dir/src.c.obj:(.literal+0x4): warning: pthread_create is not implemented and will always fail
+        /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/xtensa-esp32-elf-clang-ld: CMakeFiles/cmTC_b3c71.dir/src.c.obj:(.literal+0x8): warning: pthread_detach is not implemented and will always fail
+        /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/xtensa-esp32-elf-clang-ld: CMakeFiles/cmTC_b3c71.dir/src.c.obj:(.literal+0x18): warning: pthread_exit is not implemented and will always fail
+        /home/minipops/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/xtensa-esp32-elf-clang-ld: CMakeFiles/cmTC_b3c71.dir/src.c.obj:(.literal+0x10): warning: pthread_join is not implemented and will always fail
+        
+      exitCode: 0
+...
