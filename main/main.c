@@ -45,8 +45,13 @@ void display_task(void *pvParameters) {
       draw_line(x, y, x + 1, next_y, canvas);
     }
 
+<<<<<<< HEAD
     esp_lcd_panel_draw_bitmap(panel_handle, 0, 0, 128, 32, canvas);
     vTaskDelay(pdMS_TO_TICKS(50));
+=======
+		esp_lcd_panel_draw_bitmap(panel_handle, 0, 0, 128, 32, canvas);
+		vTaskDelay(pdMS_TO_TICKS(10));
+>>>>>>> 1013b7c (medel raw)
   }
 }
 

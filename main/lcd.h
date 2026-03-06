@@ -5,8 +5,8 @@
 #include <stdint.h>
 #include "symbols.h"
 
-#define I2C_MASTER_SCL_IO 22
-#define I2C_MASTER_SDA_IO 21
+#define I2C_MASTER_SCL_IO 32
+#define I2C_MASTER_SDA_IO 33
 
 #define TEST_I2C_PORT -1
 #define LCD_ADDR 0x3C

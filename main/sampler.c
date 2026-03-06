@@ -11,14 +11,26 @@ QueueHandle_t sample_queue = NULL;
 
 static void periodic_timer_callback(void *args){
 	int raw_val;
+	static int samples[300] = {0};
+		static int count = 0;
 	adc_oneshot_read(adc_handle, ADC_CHANNEL_8, &raw_val);
-	
+	samples[count] = raw_val;
+		count++;
+	if(count > 300) count = 0;
+	int sum = 0;
+	for(int i = 0; i < 300; i++){
+				sum += samples[i];
+
+	}
+	sum /= 300;
+	raw_val -= sum;
+		printf("%d\n",raw_val);
 	xQueueSendFromISR(sample_queue, &raw_val, NULL);
 }
 
 
 void sampler_init(void){
-	sample_queue = xQueueCreate(10, sizeof(int));
+	sample_queue = xQueueCreate(20, sizeof(int));
 
 
 	adc_oneshot_unit_init_cfg_t init_config = {
