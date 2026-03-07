@@ -4,6 +4,7 @@
 #include "freertos/idf_additions.h"
 #include "freertos/projdefs.h"
 #include <stdint.h>
+#include <stdio.h>
 #include <string.h>
 
 #include "font.h"
@@ -17,15 +18,13 @@ static int plot_buf[128] = {0};
 
 void update_waveform(int val);
 void calculate_bpm(int sample);
-volatile float bpm;
+volatile int bpm;
+int bpm_previous = 0;
 volatile int prev_sample = 0;
+char bpm_str[10];
 
 volatile unsigned int beat_times[BEATS_FOR_BPM] = {0};
 volatile int beat[BEATS_FOR_BPM] = {0};
-
-
-
-
 
 int scale_y(int val) {
   static int min = 4095, max = 0;
@@ -57,9 +56,13 @@ void display_task(void *pvParameters) {
       int next_y = scale_y(plot_buf[x + 1]);
       draw_line(x, y, x + 1, next_y, canvas);
     }
-
-
+		//text på skärmen
+		char text[] = "BPM: ";
+		sprintf(bpm_str, "%d",bpm);
+		strcat(text, bpm_str);
+		draw_text(text, 1, 0, canvas);
 		esp_lcd_panel_draw_bitmap(panel_handle, 0, 0, 128, 32, canvas);
+		//
 		vTaskDelay(pdMS_TO_TICKS(50));
   }
 }
@@ -95,13 +98,14 @@ void calculate_bpm(int sample){
 		}
 
 		if(1){
-				int temp = beats;
-				bpm = (temp/((float)(last_beat - first_beat)/1000000))*60;
-				printf("BPM: %f, BEATS: %d, TIME: %d\n", bpm, beats,(int)((last_beat - first_beat)/1000000));
+				if(!beat[0]) first_beat = esp_timer_get_time();
+				bpm = (int)((beats/((float)(last_beat - first_beat)/1000000))*60);
+				if(bpm > 300)bpm = 0;
+				//printf("BPM: %d, BEATS: %d, TIME: %d\n", bpm, beats,(int)((last_beat - first_beat)/1000000));
 		}else bpm = 0;
 
 		
-		//Beat detected, time and beat added to array
+		//Beat detected, time and beat added to arrays
 		if(sample < threshold && prev_sample > threshold ){
 				for(int i = BEATS_FOR_BPM - 1; i > 0; i--){
 						beat_times[i] = beat_times[i - 1];
@@ -113,9 +117,7 @@ void calculate_bpm(int sample){
 		prev_sample = sample;
 		
 		//beat not detected for 2 seconds, remove one beat. 
-		
 		if((esp_timer_get_time() - beat_times[0]) > 2000000 && beats){
-				printf("remove beat\n");
 				for(int i = BEATS_FOR_BPM - 1; i > 0; i--){
 						beat_times[i] = beat_times[i - 1];
 						beat[i] = beat[i - 1];

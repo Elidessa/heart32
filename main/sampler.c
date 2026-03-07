@@ -39,7 +39,7 @@ static void periodic_timer_callback(void *args){
 
 		static int c = 0;
 		c++;
-		if(c == 20){
+		if(c == 30){
 				c = 0;
 				xQueueSendFromISR(sample_queue, &ret,NULL);
 		}
