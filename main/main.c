@@ -31,10 +31,10 @@ void display_task(void *pvParameters) {
   uint8_t *canvas = malloc(128 * 32 / 8);
   memset(canvas, 0, 512);
   int sample;
-
   while (1) {
     while (xQueueReceive(sample_queue, &sample, 0) == pdTRUE) {
       update_waveform(sample);
+
     }
 
     memset(canvas, 0, 512);
@@ -45,18 +45,15 @@ void display_task(void *pvParameters) {
       draw_line(x, y, x + 1, next_y, canvas);
     }
 
-<<<<<<< HEAD
-    esp_lcd_panel_draw_bitmap(panel_handle, 0, 0, 128, 32, canvas);
-    vTaskDelay(pdMS_TO_TICKS(50));
-=======
+
 		esp_lcd_panel_draw_bitmap(panel_handle, 0, 0, 128, 32, canvas);
-		vTaskDelay(pdMS_TO_TICKS(10));
->>>>>>> 1013b7c (medel raw)
+		vTaskDelay(pdMS_TO_TICKS(50));
   }
 }
 
 void update_waveform(int val) {
   memmove(plot_buf, plot_buf + 1, sizeof(int) * (128 - 1));
+	plot_buf[127] = val;
 }
 
 void app_main(void) {

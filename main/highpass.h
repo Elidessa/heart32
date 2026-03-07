@@ -15,16 +15,17 @@
  */
 
 /* General type conversion for MATLAB generated C-code  */
-#include "tmwtypes.h"
 /* 
  * Expected path to tmwtypes.h 
  * C:\Program Files\MATLAB\R2024b\extern\include\tmwtypes.h 
  */
-const int NL = 4;
-const real64_T NUM[4] = {
-     0.9949860584423,   -2.984958175327,    2.984958175327,  -0.9949860584423
+static const int highpass_NL = 4;
+const float highpass_NUM[4] = {
+		0.9949860584423,   -2.984958175327,    
+		2.984958175327,  -0.9949860584423
 };
-const int DL = 4;
-const real64_T DEN[4] = {
-                   1,   -2.989946914092,    2.979944296952,  -0.9899972564945
+static const int highpass_DL = 4;
+const float highpass_DEN[4] = {
+		1,   -2.989946914092,
+		2.979944296952,  -0.9899972564945
 };

@@ -43,7 +43,6 @@ esp_lcd_panel_handle_t lcd_panel_setup() {
               .dc_low_on_data = false,
               .disable_control_phase = false,
           }
-
   };
 
   ESP_ERROR_CHECK(esp_lcd_new_panel_io_i2c(bus_handle, &io_config, &io_handle));
