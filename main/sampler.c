@@ -8,29 +8,92 @@
 #include "highpass.h"
 #include "lowpass.h"
 #include "portmacro.h"
+#define BEATS_FOR_BPM 10
+void calculate_bpm(int sample);
+volatile int bpm;
+int bpm_previous = 0;
+volatile int time_since_last_beat = 0;
+volatile int prev_sample = 0;
+char bpm_str[10];
+
+volatile unsigned int beat_times[BEATS_FOR_BPM] = {0};
+volatile int beat[BEATS_FOR_BPM] = {0};
 
 static adc_oneshot_unit_handle_t adc_handle;
 QueueHandle_t sample_queue = NULL;
 float highpass_filter(float value);
 float lowpass_filter(float value);
 
+void calculate_bpm(int sample){
+		static int is_rising, over_upper_threshold;
+
+		time_since_last_beat += 20;
+		if(sample > prev_sample){
+				is_rising = 1;
+		}else if(is_rising && sample < prev_sample){
+				is_rising = 0;
+		}
+
+		static int upper_threshold = 1000;
+		static int lower_threshold = 800;
+		//calc BPM
+		printf("upper: %d, lower: %d, sample: %d , bpm: %d \n",upper_threshold,lower_threshold, sample, bpm);
+
+		int t_sum = 0;
+		int c = 0;
+		for(int i = 0; i < BEATS_FOR_BPM; i++){
+				if(beat_times[i] > 0){
+						t_sum+=beat_times[i];
+						c++;
+				}
+		}
+		if(c > 5){
+				bpm = (c*60)/((float)t_sum / 1000);
+				printf("calc beat\n");
+		}
+		//Beat detected, time and beat added to arrays
+		if(sample >= upper_threshold && is_rising){
+				over_upper_threshold = 1;
+				upper_threshold = prev_sample*0.75;
+				lower_threshold = prev_sample*0.5;
+		}else if(sample <= lower_threshold && !is_rising && over_upper_threshold){
+				over_upper_threshold = 0;
+				for(int i = BEATS_FOR_BPM - 1; i > 0; i--){
+						beat_times[i] = beat_times[i - 1];
+				}
+				beat_times[0] = time_since_last_beat;
+				time_since_last_beat = 0;
+		}
+		prev_sample = sample;
+
+		//beat not detected for 2 seconds, remove one beat. 
+		if(time_since_last_beat > 2000){
+				for(int i = BEATS_FOR_BPM - 1; i > 0; i--){
+						beat_times[i] = beat_times[i - 1];
+				}
+				beat_times[0] = 0;
+				bpm = 0;
+		}
+		upper_threshold = (upper_threshold < 200) ? 200 : upper_threshold * 0.99;
+		lower_threshold = (lower_threshold < 200) ? 200 : lower_threshold * 0.99;
+}
 static void periodic_timer_callback(void *args){
-	int raw_val;
-	static float sum = 0;
-	static float samples[300] = {0};
-	static int count = 0;
+		int raw_val;
+		static float sum = 0;
+		static float samples[300] = {0};
+		static int count = 0;
 
-	adc_oneshot_read(adc_handle, ADC_CHANNEL_8, &raw_val);
+		adc_oneshot_read(adc_handle, ADC_CHANNEL_8, &raw_val);
 
-	float raw_float = (float)raw_val;
-	sum -= samples[count];
-	samples[count] = raw_float;
-	sum += samples[count];	
-	count++;
+		float raw_float = (float)raw_val;
+		sum -= samples[count];
+		samples[count] = raw_float;
+		sum += samples[count];	
+		count++;
 
-	if(count >= 300) count = 0;
-  float offset = sum/300;
-	float norm_val = raw_float-offset;
+		if(count >= 300) count = 0;
+		float offset = sum/300;
+		float norm_val = raw_float-offset;
 
 		norm_val = lowpass_filter(norm_val);
 		norm_val = highpass_filter(norm_val);
@@ -39,8 +102,9 @@ static void periodic_timer_callback(void *args){
 
 		static int c = 0;
 		c++;
-		if(c == 30){
+		if(c == 20){
 				c = 0;
+				calculate_bpm(ret);
 				xQueueSendFromISR(sample_queue, &ret,NULL);
 		}
 }
@@ -90,7 +154,7 @@ float highpass_filter(float value){
 	
 		ybuf[0] = tot;
 		//printf("hp input: %f, hp output: %f \n",value,tot);
-		return tot;
+		return -tot;
 }
 float lowpass_filter(float value){
 		static float l_ybuf[4] = {0};

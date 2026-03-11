@@ -12,28 +12,37 @@
 #include "sampler.h"
 #include <esp_task_wdt.h>
 
-#define BEATS_FOR_BPM 10
 
 static int plot_buf[128] = {0};
 
 void update_waveform(int val);
-void calculate_bpm(int sample);
-volatile int bpm;
-int bpm_previous = 0;
-volatile int prev_sample = 0;
-char bpm_str[10];
 
-volatile unsigned int beat_times[BEATS_FOR_BPM] = {0};
-volatile int beat[BEATS_FOR_BPM] = {0};
 
 int scale_y(int val) {
-  static int min = 4095, max = 0;
-  for (int i = 0; i < 128; i++) {
+  static int min = 4095, max = 1;
+  int current_max = 1,current_min = 4095;
+
+	for (int i = 0; i < 128; i++) {
     if (plot_buf[i] < min)
       min = plot_buf[i];
+			current_min = plot_buf[i];
     if (plot_buf[i] > max)
       max = plot_buf[i];
+			current_max = plot_buf[i];
   }
+
+	for (int i = 0; i < 128; i++) {
+    if (plot_buf[i] < current_min)
+			current_min = plot_buf[i];
+    if (plot_buf[i] > current_max)
+			current_max = plot_buf[i];
+  }
+
+	if(((float)current_max/max) < 2 && current_max > 300){
+			min = current_min;
+			max = current_max;
+	}
+		
   int range = (max - min > 10) ? (max - min) : 10;
   return 31 - ((val - min) * 31 / range);
 }
@@ -46,7 +55,6 @@ void display_task(void *pvParameters) {
   while (1) {
     while (xQueueReceive(sample_queue, &sample, 0) == pdTRUE) {
       update_waveform(sample);
-			calculate_bpm(sample);
     }
 
     memset(canvas, 0, 512);
@@ -57,10 +65,10 @@ void display_task(void *pvParameters) {
       draw_line(x, y, x + 1, next_y, canvas);
     }
 		//text på skärmen
-		char text[] = "BPM: ";
-		sprintf(bpm_str, "%d",bpm);
-		strcat(text, bpm_str);
+		char text[20];
+		sprintf(text, "BPM: %d",bpm);
 		draw_text(text, 1, 0, canvas);
+//		animate_heart(panel_handle, canvas);
 		esp_lcd_panel_draw_bitmap(panel_handle, 0, 0, 128, 32, canvas);
 		//
 		vTaskDelay(pdMS_TO_TICKS(50));
@@ -80,49 +88,4 @@ void app_main(void) {
 
   xTaskCreate(display_task, "display_task", 4096, (void *)panel_handle, 5,
               NULL);
-}
-void calculate_bpm(int sample){
-		int threshold = -1200;
-		//calc BPM
-		unsigned int first_beat = esp_timer_get_time();
-		unsigned int last_beat = 0;
-		int beats = 0;
-
-		for(int i = 0; i < BEATS_FOR_BPM; i++){
-				if(beat[i]){
-						beats++;
-
-						if(beat_times[i] < first_beat) first_beat = beat_times[i];
-						if(beat_times[i] > last_beat) last_beat = beat_times[i];
-				}
-		}
-
-		if(1){
-				if(!beat[0]) first_beat = esp_timer_get_time();
-				bpm = (int)((beats/((float)(last_beat - first_beat)/1000000))*60);
-				if(bpm > 300)bpm = 0;
-				//printf("BPM: %d, BEATS: %d, TIME: %d\n", bpm, beats,(int)((last_beat - first_beat)/1000000));
-		}else bpm = 0;
-
-		
-		//Beat detected, time and beat added to arrays
-		if(sample < threshold && prev_sample > threshold ){
-				for(int i = BEATS_FOR_BPM - 1; i > 0; i--){
-						beat_times[i] = beat_times[i - 1];
-						beat[i] = beat[i - 1];
-				}
-				beat_times[0] = esp_timer_get_time();
-				beat[0] = 1;
-		}
-		prev_sample = sample;
-		
-		//beat not detected for 2 seconds, remove one beat. 
-		if((esp_timer_get_time() - beat_times[0]) > 2000000 && beats){
-				for(int i = BEATS_FOR_BPM - 1; i > 0; i--){
-						beat_times[i] = beat_times[i - 1];
-						beat[i] = beat[i - 1];
-				}
-				beat_times[0] = esp_timer_get_time();
-				beat[0] = 0;
-		}
 }

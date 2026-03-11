@@ -5,6 +5,7 @@
 #include "esp_err.h"
 #include "esp_lcd_io_i2c.h"
 #include "esp_lcd_panel_dev.h"
+#include "esp_timer.h"
 #include "hal/lcd_types.h"
 #include "soc/gpio_num.h"
 #include "esp_lcd_panel_ops.h"
@@ -12,6 +13,9 @@
 #include "freertos/projdefs.h"
 #include "symbols.h"
 #include <string.h>
+
+volatile int anim_start;
+
 
 esp_lcd_panel_handle_t lcd_panel_setup() {
   i2c_master_bus_config_t i2c_mst_config = {
@@ -179,19 +183,26 @@ void clear_figure_on_canvas(uint8_t *canvas, const character *fig) {
 }
 
 void animate_heart(esp_lcd_panel_handle_t panel_handle, uint8_t* canvas ){
-		clear_figure_on_canvas(canvas, &heart2);
-		draw_figure_on_canvas(canvas, &heart1);
+		static int last_trans_time = 0;
+		static int state = 0;
 
-		esp_lcd_panel_draw_bitmap(panel_handle, 0, 0,
-						128, 32 , canvas);
+		int now = esp_timer_get_time();
+		int elapsed = now - last_trans_time;
 
-		vTaskDelay(pdMS_TO_TICKS(500));
-		clear_figure_on_canvas(canvas, &heart1);
+		if(state == 0 && elapsed>500*1000){
+				state = 1;
+				last_trans_time = now;
+		}else if(state == 1 && elapsed >100*1000){
+				state = 0;
+				last_trans_time = now;
+		}
 
-		draw_figure_on_canvas(canvas, &heart2);
+		if(state == 0){
+				clear_figure_on_canvas(canvas, &heart2_15x15);
+				draw_figure_on_canvas(canvas, &heart1_15x15);
+		}else if(state == 1){
+				clear_figure_on_canvas(canvas, &heart1_15x15);
+				draw_figure_on_canvas(canvas, &heart2_15x15);
+		}
 
-
-		esp_lcd_panel_draw_bitmap(panel_handle, 0, 0,
-						128, 32 , canvas);
-		vTaskDelay(pdMS_TO_TICKS(100));
 }
