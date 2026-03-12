@@ -1,21 +1,18 @@
 #include "lcd.h"
-#include <stdint.h>
-#include <esp_task_wdt.h>
 #include "driver/i2c_master.h"
 #include "esp_err.h"
 #include "esp_lcd_io_i2c.h"
 #include "esp_lcd_panel_dev.h"
-#include "esp_timer.h"
-#include "hal/lcd_types.h"
-#include "soc/gpio_num.h"
 #include "esp_lcd_panel_ops.h"
 #include "esp_lcd_panel_ssd1306.h"
+#include "esp_timer.h"
 #include "freertos/projdefs.h"
+#include "hal/lcd_types.h"
+#include "soc/gpio_num.h"
 #include "symbols.h"
+#include <esp_task_wdt.h>
+#include <stdint.h>
 #include <string.h>
-
-volatile int anim_start;
-
 
 esp_lcd_panel_handle_t lcd_panel_setup() {
   i2c_master_bus_config_t i2c_mst_config = {
@@ -33,21 +30,18 @@ esp_lcd_panel_handle_t lcd_panel_setup() {
   ESP_ERROR_CHECK(i2c_new_master_bus(&i2c_mst_config, &bus_handle));
 
   esp_lcd_panel_io_handle_t io_handle = NULL;
-  esp_lcd_panel_io_i2c_config_t io_config = {
-      .dev_addr = LCD_ADDR,
-      .scl_speed_hz = 400000,
-      .control_phase_bytes = 1,
-      .dc_bit_offset = 6,
-      .lcd_cmd_bits = 8,
-      .lcd_param_bits = 8,
-      .on_color_trans_done = NULL,
-      .user_ctx = NULL,
-      .flags =
-          {
-              .dc_low_on_data = false,
-              .disable_control_phase = false,
-          }
-  };
+  esp_lcd_panel_io_i2c_config_t io_config = {.dev_addr = LCD_ADDR,
+                                             .scl_speed_hz = 400000,
+                                             .control_phase_bytes = 1,
+                                             .dc_bit_offset = 6,
+                                             .lcd_cmd_bits = 8,
+                                             .lcd_param_bits = 8,
+                                             .on_color_trans_done = NULL,
+                                             .user_ctx = NULL,
+                                             .flags = {
+                                                 .dc_low_on_data = false,
+                                                 .disable_control_phase = false,
+                                             }};
 
   ESP_ERROR_CHECK(esp_lcd_new_panel_io_i2c(bus_handle, &io_config, &io_handle));
 
@@ -79,7 +73,11 @@ void set_pixel(int x, int y, uint8_t *canvas) {
   int index = (y / 8) * 128 + x;
   canvas[index] |= (1 << (y % 8));
 }
-void clear_pixel(int x, int y, uint8_t *canvas){
+
+// TODO: Tror inte denna gör vad den ska
+// 0 << x = 0b00000000 alltid
+// sen &= sätter hela uint8_t till 0
+void clear_pixel(int x, int y, uint8_t *canvas) {
   int index = (y / 8) * 128 + x;
   canvas[index] &= (0 << (y % 8));
 }
@@ -169,6 +167,7 @@ void draw_figure_on_canvas(uint8_t *canvas, const character *fig) {
       y++;
   }
 }
+
 void clear_figure_on_canvas(uint8_t *canvas, const character *fig) {
   int fig_x = fig->x;
   int fig_y = fig->y;
@@ -182,27 +181,26 @@ void clear_figure_on_canvas(uint8_t *canvas, const character *fig) {
   }
 }
 
-void animate_heart(esp_lcd_panel_handle_t panel_handle, uint8_t* canvas ){
-		static int last_trans_time = 0;
-		static int state = 0;
+void animate_heart(esp_lcd_panel_handle_t panel_handle, uint8_t *canvas) {
+  static int last_trans_time = 0;
+  static int state = 0;
 
-		int now = esp_timer_get_time();
-		int elapsed = now - last_trans_time;
+  int now = esp_timer_get_time();
+  int elapsed = now - last_trans_time;
 
-		if(state == 0 && elapsed>500*1000){
-				state = 1;
-				last_trans_time = now;
-		}else if(state == 1 && elapsed >100*1000){
-				state = 0;
-				last_trans_time = now;
-		}
+  if (state == 0 && elapsed > 500 * 1000) {
+    state = 1;
+    last_trans_time = now;
+  } else if (state == 1 && elapsed > 100 * 1000) {
+    state = 0;
+    last_trans_time = now;
+  }
 
-		if(state == 0){
-				clear_figure_on_canvas(canvas, &heart2_15x15);
-				draw_figure_on_canvas(canvas, &heart1_15x15);
-		}else if(state == 1){
-				clear_figure_on_canvas(canvas, &heart1_15x15);
-				draw_figure_on_canvas(canvas, &heart2_15x15);
-		}
-
+  if (state == 0) {
+    clear_figure_on_canvas(canvas, &heart2_15x15);
+    draw_figure_on_canvas(canvas, &heart1_15x15);
+  } else if (state == 1) {
+    clear_figure_on_canvas(canvas, &heart1_15x15);
+    draw_figure_on_canvas(canvas, &heart2_15x15);
+  }
 }
