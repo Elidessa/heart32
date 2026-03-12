@@ -1,5 +1,6 @@
 #include "sampler.h"
 #include "esp_adc/adc_oneshot.h"
+#include "esp_check.h"
 #include "esp_timer.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/projdefs.h"
@@ -17,7 +18,10 @@
 #define UPPER_RATIO 0.75f
 #define LOWER_RATIO 0.50f
 #define BEAT_TIMEOUT_MS 2000
-#define SAMPLE_PERIOD_MS 20
+#define SAMPLE_RATE_HZ 1000
+#define DECIMATION_FACTOR 20
+#define SAMPLE_PERIOD_MS (DECIMATION_FACTOR * 1000 / SAMPLE_RATE_HZ)
+#define MA_WINDOW_SIZE 300
 #define MAX_INTERVAL_MS 3000
 
 typedef enum { WAITING_FOR_BEAT, IN_BEAT } beat_state_t;
@@ -111,7 +115,7 @@ void detect_heartbeat(int sample) {
 static void periodic_timer_callback(void *args) {
   int raw_val;
   static float sum = 0;
-  static float samples[300] = {0};
+  static float samples[MA_WINDOW_SIZE] = {0};
   static int count = 0;
 
   adc_oneshot_read(adc_handle, ADC_CHANNEL_8, &raw_val);
@@ -122,22 +126,24 @@ static void periodic_timer_callback(void *args) {
   sum += samples[count];
   count++;
 
-  if (count >= 300)
+  if (count >= MA_WINDOW_SIZE)
     count = 0;
-  float offset = sum / 300;
+  float offset = sum / MA_WINDOW_SIZE;
   float norm_val = raw_float - offset;
 
   norm_val = lowpass_filter(norm_val);
   norm_val = highpass_filter(norm_val);
 
-  int ret = (int)norm_val;
+  int filtered_sample = (int)norm_val;
 
-  static int c = 0;
-  c++;
-  if (c == 20) {
-    c = 0;
-    detect_heartbeat(ret);
-    xQueueSendFromISR(sample_queue, &ret, NULL);
+  static int decimation_count = 0;
+  decimation_count++;
+  if (decimation_count == DECIMATION_FACTOR) {
+    decimation_count = 0;
+    detect_heartbeat(filtered_sample);
+    BaseType_t woken = pdFALSE;
+    xQueueSendFromISR(sample_queue, &filtered_sample, &woken);
+    if (woken) portYIELD_FROM_ISR();
   }
 }
 
@@ -148,22 +154,22 @@ void sampler_init(void) {
       .unit_id = ADC_UNIT_2,
   };
 
-  adc_oneshot_new_unit(&init_config, &adc_handle);
+  ESP_ERROR_CHECK(adc_oneshot_new_unit(&init_config, &adc_handle));
 
   adc_oneshot_chan_cfg_t config = {
       .bitwidth = ADC_BITWIDTH_DEFAULT,
       .atten = ADC_ATTEN_DB_12,
   };
 
-  adc_oneshot_config_channel(adc_handle, ADC_CHANNEL_8, &config);
+  ESP_ERROR_CHECK(adc_oneshot_config_channel(adc_handle, ADC_CHANNEL_8, &config));
 
   const esp_timer_create_args_t timer_args = {
       .callback = &periodic_timer_callback,
       .name = "periodic_timer",
   };
   esp_timer_handle_t timer_handle;
-  esp_timer_create(&timer_args, &timer_handle);
-  esp_timer_start_periodic(timer_handle, 1000000 / 1000);
+  ESP_ERROR_CHECK(esp_timer_create(&timer_args, &timer_handle));
+  ESP_ERROR_CHECK(esp_timer_start_periodic(timer_handle, 1000000 / SAMPLE_RATE_HZ));
 }
 float highpass_filter(float value) {
   static float ybuf[4] = {0};
